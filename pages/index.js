@@ -64,9 +64,9 @@ export default function Home() {
             communication within the system.
           </li>
           <li>
-            Collaborated on front-end tasks using Vue.js, contributing to the
-            development and maintenance of high-quality user interfaces for the
-            company&apos;s product.
+            Collaborated on front-end tasks using <strong>Vue.js</strong>,
+            contributing to the development and maintenance of high-quality user
+            interfaces for the company&apos;s product.
           </li>
         </ul>
       </div>
