@@ -35,9 +35,9 @@ export default function Home() {
             and <Strong>Storybook</Strong>.
           </li>
           <li>
-            Worked collaboratively with a team of developers and designers to
-            develop new features and fix bugs on the front-end of the main
-            product using <Strong>React</Strong>.
+            Worked with a team of developers and designers to develop new
+            features and fix bugs on the front-end of the main product using{" "}
+            <Strong>React</Strong>.
           </li>
         </ul>
       </div>
@@ -50,16 +50,16 @@ export default function Home() {
         <ul className="flex list-disc flex-col gap-4 pl-4">
           <li>
             Worked on the development and maintenance of microservices and
-            gateway{" "}
-            <strong>REST APIs using TypeScript, Nest.js, and MySQL</strong>.
+            gateway <Strong>REST APIs</Strong> using <Strong>TypeScript</Strong>
+            , <Strong>Nest.js</Strong>, and <Strong>MySQL</Strong>.
           </li>
           <li>
             Implemented NATS as a messaging service between microservices,
-            enhancing the reliability and performance of inter-service
-            communication within the system.
+            enhancing the reliability and performance of communication within
+            the system.
           </li>
           <li>
-            Collaborated on front-end tasks using <strong>Vue.js</strong>,
+            Collaborated on front-end tasks using <Strong>Vue.js</Strong>,
             contributing to the development and maintenance of high-quality user
             interfaces for the company&apos;s product.
           </li>
