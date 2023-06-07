@@ -18,29 +18,26 @@ export default function Home() {
         </div>
         <ul className="flex list-disc flex-col gap-4 pl-4">
           <li>
-            Collaborated with the development team to successfully migrate the
-            user dashboard from PHP to <strong>React</strong>, resulting in a
-            reduction in page load times. Contributed to the development of key
-            features, such as responsive design, and data visualization.
+            Collaborated on the user dashboard migration from PHP to{" "}
+            <Strong>React</Strong> to improve page load times. Developed
+            responsive design and data visualization features.
           </li>
           <li>
-            Participated in the development of a new Authentication API
-            microservice using <strong>Nest.js</strong> and Amazon Cognito.
-            Worked with the team to the design and implement key features, such
-            as user authentication, authorization, and password recovery.
+            Participated in the development of the Authentication API
+            microservice using <Strong>Nest.js</Strong> and{" "}
+            <Strong>Amazon Cognito</Strong>. Implemented user authentication,
+            authorization, and password recovery features.
           </li>
           <li>
-            Collaborated with the Component Library team to develop and maintain
-            reusable UI elements, design tokens, and accessibility guidelines
-            for React components using{" "}
-            <strong>Material UI, TailwindCSS, and Storybook</strong>,
-            contributing to a more efficient and cohesive design system for the
-            company.
+            Collaborated on developing and maintaining reusable UI elements,
+            design tokens, and accessibility guidelines for a component library
+            using <Strong>Material UI</Strong>, <Strong>TailwindCSS</Strong>,
+            and <Strong>Storybook</Strong>.
           </li>
           <li>
             Worked collaboratively with a team of developers and designers to
             develop new features and fix bugs on the front-end of the main
-            product using <strong>React</strong>.
+            product using <Strong>React</Strong>.
           </li>
         </ul>
       </div>
