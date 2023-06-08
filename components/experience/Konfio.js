@@ -1,15 +1,17 @@
-import Subtitle from "../Subtitle";
+import H3 from "../H3";
 import Strong from "../Strong";
+import Subtitle from "../Subtitle";
+import Ul from "../Ul";
 
 export default function Konfio() {
   return (
     <>
       <div>
-        <h3 className="text-xl font-semibold">Full-stack engineer</h3>
+        <H3>Full-stack engineer</H3>
         <Subtitle>jun 2021 — dec 2022</Subtitle>
         <Subtitle>Sr. Pago/Konfio</Subtitle>
       </div>
-      <ul className="flex list-disc flex-col gap-4 pl-4">
+      <Ul>
         <li>
           Collaborated on the user dashboard migration from PHP to{" "}
           <Strong>React</Strong> to improve page load times. Developed
@@ -32,7 +34,7 @@ export default function Konfio() {
           fix bugs on the frontend of the main product using{" "}
           <Strong>React</Strong>.
         </li>
-      </ul>
+      </Ul>
     </>
   );
 }

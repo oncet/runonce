@@ -1,15 +1,17 @@
-import Subtitle from "../Subtitle";
+import H3 from "../H3";
 import Strong from "../Strong";
+import Subtitle from "../Subtitle";
+import Ul from "../Ul";
 
 export default function Yappa() {
   return (
     <>
       <div>
-        <h3 className="text-xl font-semibold">Backend engineer</h3>
+        <H3>Backend engineer</H3>
         <Subtitle>nov 2020 — may 2021</Subtitle>
         <Subtitle>Yappa World Inc.</Subtitle>
       </div>
-      <ul className="flex list-disc flex-col gap-4 pl-4">
+      <Ul>
         <li>
           Worked on the development and maintenance of microservices and gateway{" "}
           <Strong>REST APIs</Strong> using <Strong>TypeScript</Strong>,{" "}
@@ -25,7 +27,7 @@ export default function Yappa() {
           contributing to the development and maintenance of user interfaces for
           the main product.
         </li>
-      </ul>
+      </Ul>
     </>
   );
 }
