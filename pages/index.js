@@ -1,8 +1,9 @@
 import Strong from "@/components/Strong";
 import Konfio from "@/components/experience/Konfio";
 import Yappa from "@/components/experience/Yappa";
+import Elementum from "@/components/experience/Elementum";
 
-const experience = [Konfio, Yappa];
+const experience = [Konfio, Yappa, Elementum];
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       </p>
       <h2 className="text-3xl font-bold">Work experience</h2>
       {experience.map((Component) => (
-        <div className="flex flex-col gap-4">
+        <div key={Component.name} className="flex flex-col gap-4">
           <Component />
         </div>
       ))}
