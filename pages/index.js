@@ -6,7 +6,7 @@ const experience = [Konfio, Yappa];
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-4">
+    <main className="flex flex-col gap-4 max-w-screen-md mx-auto">
       <h1 className="text-4xl font-bold">Camilo Rivera</h1>
       <p className="text-lg text-slate-400">
         Experienced developer proficient in <Strong>TypeScript</Strong>,{" "}
