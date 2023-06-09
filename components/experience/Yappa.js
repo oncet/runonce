@@ -24,8 +24,7 @@ export default function Yappa() {
         </li>
         <li>
           Collaborated on frontend tasks using <Strong>Vue.js</Strong>,
-          contributing to the development and maintenance of user interfaces for
-          the main product.
+          contributing to the development and maintenance of the main product.
         </li>
       </Ul>
     </>
