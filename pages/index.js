@@ -20,11 +20,13 @@ export default function Home() {
         <Strong>SQL</Strong>.
       </p>
       <h2 className="text-3xl font-bold">Work experience</h2>
-      {experience.map((Component) => (
-        <div key={Component.name} className="flex flex-col gap-4">
-          <Component />
-        </div>
-      ))}
+      <div className="flex flex-col gap-6">
+        {experience.map((Component) => (
+          <div key={Component.name} className="flex flex-col gap-4">
+            <Component />
+          </div>
+        ))}
+      </div>
     </main>
   );
 }
