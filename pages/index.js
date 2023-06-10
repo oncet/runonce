@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-4 max-w-screen-md mx-auto">
       <Head>
-        <title>Camilo Rivera / Software Engineer resume</title>
-        <meta name="description" content="Camilo Rivera / Software Engineer" key="desc" />
+        <title>Camilo Rivera / Software Engineer</title>
+        <meta name="description" content="Experienced developer proficient in TypeScript, React, Node.js, and SQL." key="desc" />
       </Head>
       <h1 className="text-4xl font-bold">Camilo Rivera</h1>
       <p className="text-lg text-slate-400">
