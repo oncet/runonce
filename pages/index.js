@@ -1,7 +1,7 @@
 import Strong from "@/components/Strong";
+import Elementum from "@/components/experience/Elementum";
 import Konfio from "@/components/experience/Konfio";
 import Yappa from "@/components/experience/Yappa";
-import Elementum from "@/components/experience/Elementum";
 import Head from "next/head";
 
 const experience = [Konfio, Yappa, Elementum];
