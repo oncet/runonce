@@ -1,11 +1,12 @@
 import Strong from "@/components/Strong";
 import Ul from "@/components/Ul";
+import Educar from "@/components/experience/Educar";
 import Elementum from "@/components/experience/Elementum";
 import Konfio from "@/components/experience/Konfio";
 import Yappa from "@/components/experience/Yappa";
 import Head from "next/head";
 
-const experience = [Konfio, Yappa, Elementum];
+const experience = [Konfio, Yappa, Elementum, Educar];
 
 export default function Home() {
   return (
