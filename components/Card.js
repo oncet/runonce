@@ -47,24 +47,26 @@ export default function Card({ children }) {
             </svg>
           </p>
         </div>
-        <ul className="flex flex-wrap gap-3 leading-none">
-          <li className="rounded-lg border border-slate-700 px-3 py-2">
+        <ul className="flex flex-wrap gap-3">
+          <li className="rounded-lg border border-slate-700 px-3 py-2 font-mono text-sky-400">
             TypeScript
           </li>
-          <li className="rounded-lg border border-slate-700 px-3 py-2">
+          <li className="rounded-lg border border-slate-700 px-3 py-2 font-mono text-sky-400">
             React
           </li>
-          <li className="rounded-lg border border-slate-700 px-3 py-2">
+          <li className="rounded-lg border border-slate-700 px-3 py-2 font-mono text-sky-400">
             Nest.js
           </li>
-          <li className="rounded-lg border border-slate-700 px-3 py-2">AWS</li>
-          <li className="rounded-lg border border-slate-700 px-3 py-2">
+          <li className="rounded-lg border border-slate-700 px-3 py-2 font-mono text-sky-400">
+            AWS
+          </li>
+          <li className="rounded-lg border border-slate-700 px-3 py-2 font-mono text-sky-400">
             Material UI
           </li>
-          <li className="rounded-lg border border-slate-700 px-3 py-2">
+          <li className="rounded-lg border border-slate-700 px-3 py-2 font-mono text-sky-400">
             Tailwind CSS
           </li>
-          <li className="rounded-lg border border-slate-700 px-3 py-2">
+          <li className="rounded-lg border border-slate-700 px-3 py-2 font-mono text-sky-400">
             Storybook
           </li>
         </ul>

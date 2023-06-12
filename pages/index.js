@@ -10,13 +10,17 @@ const experience = [Konfio, Yappa, Elementum, Educar];
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-4 max-w-screen-md mx-auto">
+    <main className="mx-auto flex max-w-screen-md flex-col gap-4">
       <Head>
         <title>Camilo Rivera / Software Engineer</title>
-        <meta name="description" content="Experienced developer proficient in TypeScript, React, Node.js, and SQL." key="desc" />
+        <meta
+          name="description"
+          content="Experienced developer proficient in TypeScript, React, Node.js, and SQL."
+          key="desc"
+        />
       </Head>
       <h1 className="text-4xl font-bold">Camilo Rivera</h1>
-      <p className="text-lg text-slate-400 [text-wrap:balance]">
+      <p className="text-xl text-slate-400 [text-wrap:balance]">
         Experienced developer proficient in <Strong>TypeScript</Strong>,{" "}
         <Strong>React</Strong>, <Strong>Node.js</Strong>, and{" "}
         <Strong>SQL</Strong>.
@@ -31,9 +35,27 @@ export default function Home() {
       </div>
       <h2 className="text-3xl font-bold">Online profiles</h2>
       <Ul condensed>
-        <li><a href="https://github.com/oncet/" className="text-slate-400">https://github.com/oncet/</a></li>
-        <li><a href="https://www.linkedin.com/in/camilorivera/" className="text-slate-400">https://www.linkedin.com/in/camilorivera/</a></li>
-        <li><a href="https://stackoverflow.com/users/1140065/camilo/" className="text-slate-400">https://stackoverflow.com/users/1140065/camilo/</a></li>
+        <li>
+          <a href="https://github.com/oncet/" className="text-slate-400">
+            https://github.com/oncet/
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/camilorivera/"
+            className="text-slate-400"
+          >
+            https://www.linkedin.com/in/camilorivera/
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://stackoverflow.com/users/1140065/camilo/"
+            className="text-slate-400"
+          >
+            https://stackoverflow.com/users/1140065/camilo/
+          </a>
+        </li>
       </Ul>
     </main>
   );

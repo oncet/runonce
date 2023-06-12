@@ -15,13 +15,18 @@ export default function Home() {
           key="desc"
         />
       </Head>
-      <h1 className="text-4xl font-bold">Camilo Rivera</h1>
-      <p className="text-lg text-slate-400">
-        Experienced developer proficient in <Strong>TypeScript</Strong>,{" "}
-        <Strong>React</Strong>, <Strong>Node.js</Strong>, and{" "}
-        <Strong>SQL</Strong>.
-      </p>
-      <h2 className="text-3xl font-bold">Work experience</h2>
+      <div className="flex flex-col gap-4 p-20 text-center">
+        <div className="flex flex-col gap-3">
+          <h1 className="text-4xl font-bold tracking-wide">Camilo Rivera</h1>
+          <p className="upper text-2xl font-thin tracking-wide">
+            Senior software engineer.
+          </p>
+        </div>
+        <p className="text-xl text-slate-400">
+          <Strong>TypeScript</Strong>, <Strong>React</Strong>,{" "}
+          <Strong>Node.js</Strong>, <Strong>SQL</Strong>.
+        </p>
+      </div>
       <Card />
     </main>
   );
