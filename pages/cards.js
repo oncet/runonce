@@ -2,8 +2,19 @@ import H3 from "@/components/H3";
 import Strong from "@/components/Strong";
 import Subtitle from "@/components/Subtitle";
 import Head from "next/head";
+import { useState } from "react";
 
 export default function Home() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const onClickHandler = () => {
+    console.log('onClickHandler');
+    setIsOpen(open => !open)
+  }
+
+  console.log('isOpen', isOpen)
+
   return (
     <main className="flex flex-col gap-4 max-w-screen-md mx-auto">
       <Head>
@@ -17,9 +28,9 @@ export default function Home() {
         <Strong>SQL</Strong>.
       </p>
       <h2 className="text-3xl font-bold">Work experience</h2>
-      <div className="flex flex-col gap-4 bg-slate-800 px-3 py-3 rounded-lg">
+      <div className="flex flex-col gap-4 bg-slate-800 px-3 py-3 rounded-lg cursor-pointer" onClick={onClickHandler}>
         <div className="flex flex-col gap-2">
-          <div className="flex gap-1 justify-between">
+          <div className="flex gap-1 justify-between  " >
             <div className="shrink-0">
               <H3>Full-stack engineer</H3>
               <Subtitle>jun 2021 — dec 2022</Subtitle>
@@ -41,7 +52,7 @@ export default function Home() {
             <li className="border border-slate-700 px-3 py-2 rounded-lg">Storybook</li>
           </ul>
         </div>
-        <ul className={"flex list-disc flex-col px-6 gap-4 text-slate-400 mb-2"}>
+        {isOpen ? (<ul className={"flex list-disc flex-col px-6 gap-4 text-slate-400 mb-2"}>
           <li>
             Collaborated on the user dashboard migration from PHP to{" "}
             <Strong>React</Strong> to improve page load times. Developed
@@ -64,7 +75,7 @@ export default function Home() {
             fix bugs on the frontend of the main product using{" "}
             <Strong>React</Strong>.
           </li>
-        </ul>
+        </ul>) : ''}
       </div>
     </main>
   );
