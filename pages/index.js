@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="description" content="Experienced developer proficient in TypeScript, React, Node.js, and SQL." key="desc" />
       </Head>
       <h1 className="text-4xl font-bold">Camilo Rivera</h1>
-      <p className="text-lg text-slate-400">
+      <p className="text-lg text-slate-400 [text-wrap:balance]">
         Experienced developer proficient in <Strong>TypeScript</Strong>,{" "}
         <Strong>React</Strong>, <Strong>Node.js</Strong>, and{" "}
         <Strong>SQL</Strong>.
