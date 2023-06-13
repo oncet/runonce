@@ -17,15 +17,15 @@ export default function Card({ children }) {
       onClick={onClickHandler}
     >
       <div className="flex flex-col gap-2">
-        <div className="flex justify-between gap-1 pl-2">
-          <div className="shrink-0">
+        <div className="pl-2">
+          <div className="mb-2 flex justify-between">
             <H3>Full-stack engineer</H3>
-            <Subtitle>jun 2021 — dec 2022</Subtitle>
-            <Subtitle>Sr. Pago - Konfio</Subtitle>
+            <button>
+              <ToggleExpandIcon isOpen={isOpen} />
+            </button>
           </div>
-          <p className="text-right">
-            <ToggleExpandIcon isOpen={isOpen} />
-          </p>
+          <Subtitle>jun 2021 — dec 2022</Subtitle>
+          <Subtitle>Sr. Pago - Konfio</Subtitle>
         </div>
         <ul className="flex flex-wrap gap-3">
           <li className="rounded-lg border border-slate-700 px-3 py-2 font-mono text-sky-400">
