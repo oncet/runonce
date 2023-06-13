@@ -13,7 +13,7 @@ export default function Card({ children }) {
 
   return (
     <div
-      className="flex cursor-pointer flex-col gap-4 overflow-hidden rounded-lg bg-slate-800/75 p-3 transition hover:bg-slate-800"
+      className="flex cursor-pointer flex-col gap-4 overflow-hidden rounded-lg bg-slate-800/75 p-3 transition hover:bg-slate-800	"
       onClick={onClickHandler}
     >
       <div className="flex flex-col gap-2">
@@ -52,9 +52,7 @@ export default function Card({ children }) {
         </ul>
       </div>
       {isOpen ? (
-        <ul
-          className={"mb-2 flex list-disc flex-col gap-4 px-6 text-slate-400"}
-        >
+        <ul className="mb-2 flex list-disc flex-col gap-4 px-6 text-slate-400">
           <li>
             Collaborated on the user dashboard migration from PHP to{" "}
             <Strong>React</Strong> to improve page load times. Developed
