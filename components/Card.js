@@ -2,6 +2,7 @@ import { useState } from "react";
 import H3 from "./H3";
 import Strong from "./Strong";
 import Subtitle from "./Subtitle";
+import ToggleExpandIcon from "./ToggleExpandIcon";
 
 export default function Card({ children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,28 +24,7 @@ export default function Card({ children }) {
             <Subtitle>Sr. Pago - Konfio</Subtitle>
           </div>
           <p className="text-right">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="h-6 w-6 stroke-slate-400"
-            >
-              {isOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19.5 12h-15"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 4.5v15m7.5-7.5h-15"
-                />
-              )}
-            </svg>
+            <ToggleExpandIcon isOpen={isOpen} />
           </p>
         </div>
         <ul className="flex flex-wrap gap-3">
