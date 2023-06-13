@@ -14,8 +14,8 @@ export default function ToggleExpandIcon({ isOpen }) {
         strokeLinejoin="round"
         d="M19.5 12h-15"
         className={
-          "origin-center transition-transform " +
-          (isOpen ? "rotate-0" : "rotate-90")
+          "origin-center rotate-90 transition duration-300 ease-in-out " +
+          (isOpen ? "opacity-0" : "opacity-100")
         }
       />
     </svg>
