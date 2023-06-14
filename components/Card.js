@@ -17,8 +17,8 @@ export default function Card({ title, subtitle, summary, children }) {
         <div className="pl-2">
           <div className="mb-3 flex justify-between">
             <h2 className="text-xl font-semibold">{title}</h2>
-            <button>
-              <ToggleExpandIcon isOpen={isOpen} aria-label="Expand card" />
+            <button aria-label="Expand card">
+              <ToggleExpandIcon isOpen={isOpen} />
             </button>
           </div>
           {subtitle}
