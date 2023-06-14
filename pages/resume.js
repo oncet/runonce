@@ -4,6 +4,7 @@ import Konfio from "@/components/experience/Konfio";
 import Header from "@/components/Header";
 import Yappa from "@/components/experience/Yappa";
 import Elementum from "@/components/experience/Elementum";
+import Educar from "@/components/experience/Educar";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Konfio />
         <Yappa />
         <Elementum />
+        <Educar />
       </div>
     </main>
   );
