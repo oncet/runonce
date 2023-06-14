@@ -13,7 +13,7 @@ export default function Card({ title, subtitle, summary, children }) {
       className="flex cursor-pointer flex-col rounded-lg bg-slate-800/75 p-3 transition [-webkit-tap-highlight-color:transparent]	hover:bg-slate-800"
       onClick={onClickHandler}
     >
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-4">
         <div className="pl-2">
           <div className="mb-3 flex justify-between">
             <h2 className="text-xl font-semibold">{title}</h2>
