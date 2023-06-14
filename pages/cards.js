@@ -61,7 +61,7 @@ export default function Home() {
           </ul>
         }
       >
-        <ul className="my-2 flex list-disc flex-col gap-4 px-6 text-slate-400">
+        <ul className="flex list-disc flex-col gap-4 px-6 text-slate-400">
           <li>
             Collaborated on the user dashboard migration from PHP to{" "}
             <Strong>React</Strong> to improve page load times. Developed

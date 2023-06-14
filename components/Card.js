@@ -13,9 +13,9 @@ export default function Card({ title, subtitle, summary, children }) {
       className="flex cursor-pointer flex-col rounded-lg bg-slate-800/75 p-3 transition [-webkit-tap-highlight-color:transparent]	hover:bg-slate-800"
       onClick={onClickHandler}
     >
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-5">
         <div className="pl-2">
-          <div className="mb-2 flex justify-between">
+          <div className="mb-3 flex justify-between">
             <h2 className="text-xl font-semibold">{title}</h2>
             <button>
               <ToggleExpandIcon isOpen={isOpen} />
@@ -31,7 +31,9 @@ export default function Card({ title, subtitle, summary, children }) {
           (isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0")
         }
       >
-        <div className="row-[1_/_span_2] overflow-hidden">{children}</div>
+        <div className="row-[1_/_span_2] overflow-hidden">
+          <div className="mb-2 mt-5">{children}</div>
+        </div>
       </div>
     </div>
   );
