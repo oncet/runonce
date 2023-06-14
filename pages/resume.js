@@ -1,6 +1,5 @@
 import Head from "next/head";
 
-import Strong from "@/components/Strong";
 import Konfio from "@/components/experience/Konfio";
 import Header from "@/components/Header";
 
