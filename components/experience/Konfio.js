@@ -1,10 +1,9 @@
-import H3 from "../H3";
+import Card from "../Card";
 import Strong from "../Strong";
 import Subtitle from "../Subtitle";
-import Ul from "../Ul";
-import Card from "../Card";
 import TechList from "../TechList";
 import TechListItem from "../TechListItem";
+import Ul from "../Ul";
 
 export default function Konfio() {
   return (

@@ -1,9 +1,8 @@
-import Card from "@/components/Card";
-import H3 from "@/components/H3";
-import Strong from "@/components/Strong";
-import Subtitle from "@/components/Subtitle";
-import Konfio from "@/components/experience/Konfio";
 import Head from "next/head";
+
+import Strong from "@/components/Strong";
+import Konfio from "@/components/experience/Konfio";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
@@ -16,18 +15,7 @@ export default function Home() {
           key="desc"
         />
       </Head>
-      <header className="flex flex-col gap-4 py-20 text-center">
-        <div className="flex flex-col gap-3">
-          <h1 className="text-4xl font-bold tracking-wide">Camilo Rivera</h1>
-          <p className="upper text-2xl font-thin tracking-wide">
-            Senior software engineer.
-          </p>
-        </div>
-        <p className="text-xl text-slate-400">
-          <Strong>TypeScript</Strong>, <Strong>React</Strong>,{" "}
-          <Strong>Node.js</Strong>, <Strong>SQL</Strong>.
-        </p>
-      </header>
+      <Header />
       <Konfio />
     </main>
   );
