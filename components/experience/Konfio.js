@@ -1,16 +1,32 @@
-import H3 from "../H3";
+import Card from "../Card";
 import Strong from "../Strong";
 import Subtitle from "../Subtitle";
+import TechList from "../TechList";
+import TechListItem from "../TechListItem";
 import Ul from "../Ul";
 
 export default function Konfio() {
   return (
-    <>
-      <div>
-        <H3>Full-stack engineer</H3>
-        <Subtitle>jun 2021 — dec 2022</Subtitle>
-        <Subtitle>Sr. Pago/Konfio</Subtitle>
-      </div>
+    <Card
+      title="Full-stack engineer"
+      subtitle={
+        <>
+          <Subtitle>jun 2021 — dec 2022</Subtitle>
+          <Subtitle>Sr. Pago - Konfio</Subtitle>
+        </>
+      }
+      summary={
+        <TechList>
+          <TechListItem>TypeScript</TechListItem>
+          <TechListItem>React</TechListItem>
+          <TechListItem>Nest.js</TechListItem>
+          <TechListItem>AWS</TechListItem>
+          <TechListItem>Material UI</TechListItem>
+          <TechListItem>Tailwind CSS</TechListItem>
+          <TechListItem>Storybook</TechListItem>
+        </TechList>
+      }
+    >
       <Ul>
         <li>
           Collaborated on the user dashboard migration from PHP to{" "}
@@ -35,6 +51,6 @@ export default function Konfio() {
           <Strong>React</Strong>.
         </li>
       </Ul>
-    </>
+    </Card>
   );
 }
