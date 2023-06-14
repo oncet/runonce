@@ -3,6 +3,7 @@ import Head from "next/head";
 import Konfio from "@/components/experience/Konfio";
 import Header from "@/components/Header";
 import Yappa from "@/components/experience/Yappa";
+import Elementum from "@/components/experience/Elementum";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <div className="flex flex-col gap-7">
         <Konfio />
         <Yappa />
+        <Elementum />
       </div>
     </main>
   );
