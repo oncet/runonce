@@ -13,7 +13,7 @@ export default function Card({ children }) {
 
   return (
     <div
-      className="flex cursor-pointer flex-col gap-4 rounded-lg bg-slate-800/75 p-3 transition [-webkit-tap-highlight-color:transparent]	hover:bg-slate-800"
+      className="flex cursor-pointer flex-col rounded-lg bg-slate-800/75 p-3 [-webkit-tap-highlight-color:transparent]	hover:bg-slate-800"
       onClick={onClickHandler}
     >
       <div className="flex flex-col gap-2">
@@ -51,34 +51,39 @@ export default function Card({ children }) {
           </li>
         </ul>
       </div>
-      {isOpen ? (
-        <ul className="mb-2 flex list-disc flex-col gap-4 px-6 text-slate-400">
-          <li>
-            Collaborated on the user dashboard migration from PHP to{" "}
-            <Strong>React</Strong> to improve page load times. Developed
-            responsive design and data visualization features.
-          </li>
-          <li>
-            Participated in the development of the Authentication API
-            microservice using <Strong>Nest.js</Strong> and{" "}
-            <Strong>Amazon Cognito</Strong>. Implemented user authentication,
-            authorization, and password recovery features.
-          </li>
-          <li>
-            Collaborated on developing and maintaining reusable UI elements,
-            design tokens, and accessibility guidelines for a component library
-            using <Strong>Material UI</Strong>, <Strong>TailwindCSS</Strong>,
-            and <Strong>Storybook</Strong>.
-          </li>
-          <li>
-            Worked with other developers and designers to develop new features
-            and fix bugs on the frontend of the main product using{" "}
-            <Strong>React</Strong>.
-          </li>
-        </ul>
-      ) : (
-        ""
-      )}
+      <div
+        className={
+          "grid transition-all duration-500 ease-in-out " +
+          (isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0")
+        }
+      >
+        <div className="row-[1_/_span_2] overflow-hidden">
+          <ul className="my-2 flex list-disc flex-col gap-4 px-6 text-slate-400">
+            <li>
+              Collaborated on the user dashboard migration from PHP to{" "}
+              <Strong>React</Strong> to improve page load times. Developed
+              responsive design and data visualization features.
+            </li>
+            <li>
+              Participated in the development of the Authentication API
+              microservice using <Strong>Nest.js</Strong> and{" "}
+              <Strong>Amazon Cognito</Strong>. Implemented user authentication,
+              authorization, and password recovery features.
+            </li>
+            <li>
+              Collaborated on developing and maintaining reusable UI elements,
+              design tokens, and accessibility guidelines for a component
+              library using <Strong>Material UI</Strong>,{" "}
+              <Strong>TailwindCSS</Strong>, and <Strong>Storybook</Strong>.
+            </li>
+            <li>
+              Worked with other developers and designers to develop new features
+              and fix bugs on the frontend of the main product using{" "}
+              <Strong>React</Strong>.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
