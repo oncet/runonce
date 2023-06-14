@@ -28,6 +28,10 @@ export default function Home() {
         </p>
       </header>
       <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </main>
   );
 }
