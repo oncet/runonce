@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Konfio from "@/components/experience/Konfio";
 import Header from "@/components/Header";
+import Yappa from "@/components/experience/Yappa";
 
 export default function Home() {
   return (
@@ -15,7 +16,10 @@ export default function Home() {
         />
       </Head>
       <Header />
-      <Konfio />
+      <div className="flex flex-col gap-7">
+        <Konfio />
+        <Yappa />
+      </div>
     </main>
   );
 }

@@ -17,13 +17,13 @@ export default function Konfio() {
       }
       summary={
         <TechList>
-          <TechListItem>TypeScript</TechListItem>
-          <TechListItem>React</TechListItem>
-          <TechListItem>Nest.js</TechListItem>
           <TechListItem>AWS</TechListItem>
           <TechListItem>Material UI</TechListItem>
-          <TechListItem>Tailwind CSS</TechListItem>
+          <TechListItem>Nest.js</TechListItem>
+          <TechListItem>React</TechListItem>
           <TechListItem>Storybook</TechListItem>
+          <TechListItem>Tailwind CSS</TechListItem>
+          <TechListItem>TypeScript</TechListItem>
         </TechList>
       }
     >
