@@ -45,8 +45,7 @@ export default function Elementum() {
           other key optimizations, such as tree shaking, code splitting, and
           lazy loading. The results included a 75% reduction in{" "}
           <code>npm install</code> time and a 70% improvement in overall
-          Lighthouse score, enhancing both the user experience and the developer
-          experience.
+          Lighthouse score, enhancing both the user and developer experience.
         </li>
         <li>
           Implemented Module Federation as a potential replacement for an
