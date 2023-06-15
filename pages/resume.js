@@ -23,6 +23,18 @@ export default function Home() {
         <Yappa />
         <Elementum />
         <Educar />
+        <blockquote className="mb-5">
+          <p className="p-8 text-3xl font-extrabold tracking-tight">
+            &quot;You should name a variable using the same care with which you
+            name a first-born child.&quot;
+          </p>
+          <figcaption className="mt-4 text-right">
+            <div className="font-bold">Robert C. Martin</div>
+            <cite className="text-sm not-italic text-slate-400">
+              Clean Code: A Handbook of Agile Software Craftsmanship
+            </cite>
+          </figcaption>
+        </blockquote>
       </main>
       <footer className="border-t border-t-slate-800 px-4 py-8">
         <div className="mx-auto max-w-screen-md px-4">
