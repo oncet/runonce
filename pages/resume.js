@@ -24,7 +24,7 @@ export default function Home() {
         <Elementum />
         <Educar />
         <blockquote className="mb-5">
-          <p className="p-8 text-3xl font-extrabold tracking-tight">
+          <p className="py-8 text-right text-3xl font-extrabold tracking-tight">
             &quot;You should name a variable using the same care with which you
             name a first-born child.&quot;
           </p>
@@ -38,9 +38,30 @@ export default function Home() {
       </main>
       <footer className="border-t border-t-slate-800 px-4 py-8">
         <div className="mx-auto max-w-screen-md px-4">
-          <ul className="flex justify-end gap-4 text-slate-500">
+          <ul className="flex gap-4 text-slate-400 ">
             <li>
-              <a href="https://github.com/oncet/">github.com/oncet</a>
+              <a
+                href="https://github.com/oncet/"
+                className="transition duration-300 hover:text-slate-300"
+              >
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://stackoverflow.com/users/1140065/camilo/"
+                className="transition duration-300 hover:text-slate-300"
+              >
+                Stack Overlow
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/camilorivera/"
+                className="transition duration-300 hover:text-slate-300"
+              >
+                LinkedIn
+              </a>
             </li>
           </ul>
         </div>
