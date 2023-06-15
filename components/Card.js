@@ -5,7 +5,9 @@ export default function Card({ title, subtitle, summary, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const onClickHandler = () => {
-    setIsOpen((open) => !open);
+    const textSelection = window.getSelection().toString();
+
+    if (!textSelection.length) setIsOpen((open) => !open);
   };
 
   return (
