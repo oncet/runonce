@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Yappa from "@/components/experience/Yappa";
 import Elementum from "@/components/experience/Elementum";
 import Educar from "@/components/experience/Educar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -39,6 +40,14 @@ export default function Home() {
       <footer className="border-t border-t-slate-800 px-4 py-8">
         <div className="mx-auto max-w-screen-md px-4">
           <ul className="flex gap-4 text-slate-400 ">
+            <li>
+              <Link
+                href="/"
+                className="transition duration-300 hover:text-slate-300"
+              >
+                runonce.io
+              </Link>
+            </li>
             <li>
               <a
                 href="https://github.com/oncet/"
