@@ -39,7 +39,7 @@ export default function Home() {
       </main>
       <footer className="border-t border-t-slate-800 px-4 py-8">
         <div className="mx-auto max-w-screen-md px-4">
-          <ul className="flex gap-4 text-slate-400 ">
+          <ul className="flex gap-8 text-slate-400 ">
             <li>
               <Link
                 href="/"
