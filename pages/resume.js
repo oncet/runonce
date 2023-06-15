@@ -8,7 +8,7 @@ import Educar from "@/components/experience/Educar";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex max-w-screen-md flex-col gap-4">
+    <>
       <Head>
         <title>Camilo Rivera / Software Engineer</title>
         <meta
@@ -18,12 +18,21 @@ export default function Home() {
         />
       </Head>
       <Header />
-      <div className="flex flex-col gap-7">
+      <main className="mx-auto flex max-w-screen-md flex-col gap-7 px-4 pb-8">
         <Konfio />
         <Yappa />
         <Elementum />
         <Educar />
-      </div>
-    </main>
+      </main>
+      <footer className="border-t border-t-slate-800 px-4 py-8">
+        <div className="mx-auto max-w-screen-md px-4">
+          <ul className="flex justify-end gap-4 text-slate-500">
+            <li>
+              <a href="https://github.com/oncet/">github.com/oncet</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </>
   );
 }
