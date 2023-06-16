@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex max-w-screen-md flex-col gap-8 p-8">
+    <>
       <Head>
         <title>runonce</title>
         <meta
@@ -12,15 +12,21 @@ export default function Home() {
           key="desc"
         />
       </Head>
-      <h1 className="text-4xl font-extrabold tracking-tight">runonce</h1>
-      <p className="text-lg text-slate-300 [text-wrap:balance]">
-        Welcome! Hopefully there will be more content here in the future,
-        meanwhile you can checkout my{" "}
-        <Link href="resume" className="font-bold text-sky-400">
-          resume
-        </Link>
-        .
-      </p>
-    </main>
+      <header className="mx-auto mb-4 max-w-screen-md px-6 py-4">
+        <h1 className="text-4xl font-extrabold tracking-tight">runonce</h1>
+      </header>
+      <main className="mx-auto max-w-screen-md px-6">
+        <p className="mb-6 text-lg text-slate-300 [text-wrap:balance]">
+          Hi, welcome to my homepage! My name is Camilo and I love coding.
+        </p>
+        <p className="mb-20 text-lg text-slate-300 [text-wrap:balance]">
+          Checkout my{" "}
+          <Link href="resume" className="font-bold text-sky-400">
+            resume
+          </Link>
+          .
+        </p>
+      </main>
+    </>
   );
 }
