@@ -25,7 +25,7 @@ export default function Home() {
         <Elementum />
         <Educar />
         <blockquote className="my-20">
-          <p className="py-4 text-center text-3xl font-thin tracking-wide">
+          <p className="py-4 text-center text-3xl font-thin tracking-wide [text-wrap:balance]">
             &quot;You should name a variable using the same care with which you
             name a first-born child.&quot;
           </p>

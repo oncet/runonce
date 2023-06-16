@@ -9,7 +9,7 @@ export default function Header({ children }) {
           Senior software engineer.
         </p>
       </div>
-      <p className="text-xl text-slate-400">
+      <p className="text-xl text-slate-400 [text-wrap:balance]">
         <Strong>TypeScript</Strong>, <Strong>React</Strong>,{" "}
         <Strong>Node.js</Strong>, <Strong>SQL</Strong>.
       </p>
