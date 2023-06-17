@@ -21,7 +21,7 @@ export default function Elementum() {
           <TechListItem>styled-components</TechListItem>
           <TechListItem>Storybook</TechListItem>
           <TechListItem>webpack</TechListItem>
-          <TechListItem>RESTful APIs</TechListItem>
+          <TechListItem>REST API</TechListItem>
           <TechListItem>Node.js</TechListItem>
           <TechListItem>Express</TechListItem>
           <TechListItem>MongoDB</TechListItem>
