@@ -12,11 +12,11 @@ export default function Home() {
           key="desc"
         />
       </Head>
-      <header className="mx-auto mb-4 max-w-screen-md px-6 py-4">
+      <header className="mx-auto mb-4 max-w-screen-md px-6 pt-4 sm:pt-8">
         <h1 className="text-4xl font-extrabold tracking-tight">runonce</h1>
       </header>
       <main className="mx-auto max-w-screen-md px-6">
-        <p className="mb-6 text-lg text-slate-300 [text-wrap:balance]">
+        <p className="mb-4 text-lg text-slate-300 [text-wrap:balance]">
           Hi, welcome to my homepage! My name is Camilo and I love coding.
         </p>
         <p className="mb-20 text-lg text-slate-300 [text-wrap:balance]">
