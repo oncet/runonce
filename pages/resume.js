@@ -26,7 +26,7 @@ export default function Home() {
         <Elementum />
         <Educar />
         <Gm2dev />
-        <blockquote className="my-20">
+        <blockquote className="sm:my-20">
           <p className="py-4 text-center text-3xl font-thin tracking-wide [text-wrap:balance]">
             &quot;You should name a variable using the same care with which you
             name a first-born child.&quot;
@@ -41,7 +41,7 @@ export default function Home() {
       </main>
       <footer className="border-t border-t-slate-800 px-4 py-8">
         <div className="mx-auto max-w-screen-md px-4">
-          <ul className="flex flex-col gap-8 text-slate-400 sm:flex-row ">
+          <ul className="flex flex-col gap-8 text-right text-slate-400 sm:flex-row">
             <li>
               <Link
                 href="/"
