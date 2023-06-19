@@ -7,6 +7,8 @@ import Elementum from "@/components/experience/Elementum";
 import Educar from "@/components/experience/Educar";
 import Link from "next/link";
 import Gm2dev from "@/components/experience/Gm2dev";
+import LeanderGames from "@/components/experience/LeanderGames";
+import Educar2018 from "@/components/experience/Educar2018";
 
 export default function Home() {
   return (
@@ -24,8 +26,10 @@ export default function Home() {
         <Konfio />
         <Yappa />
         <Elementum />
-        <Educar />
+        <Educar2018 />
         <Gm2dev />
+        <LeanderGames />
+        <Educar />
         <blockquote className="sm:my-20">
           <p className="py-4 text-center text-3xl font-thin tracking-wide [text-wrap:balance]">
             &quot;You should name a variable using the same care with which you
