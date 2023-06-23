@@ -43,6 +43,7 @@ export default function Home() {
             />
             <button
               onClick={() => setIsOpen(true)}
+              disabled={isOpen}
               className={
                 "relative rounded-lg border-slate-600 bg-slate-800 px-4 py-2 font-semibold text-sky-500 ring-1 ring-slate-700 transition-opacity [-webkit-tap-highlight-color:transparent] " +
                 (isOpen ? "opacity-0" : "opacity-100")
