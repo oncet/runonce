@@ -8,7 +8,7 @@ import Ul from "../Ul";
 export default function Persiscal() {
   return (
     <Card
-      title="Full Stack Engineer"
+      title="Full-stack engineer"
       subtitle={
         <>
           <Subtitle>oct 2015 — dec 2016</Subtitle>

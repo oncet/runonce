@@ -8,7 +8,7 @@ import Ul from "../Ul";
 export default function EntornosEducativos() {
   return (
     <Card
-      title="Full Stack Engineer"
+      title="Full-stack engineer"
       subtitle={
         <>
           <Subtitle>jun 2012 — aug 2014</Subtitle>
