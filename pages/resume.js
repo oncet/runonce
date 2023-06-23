@@ -79,6 +79,8 @@ export default function Home() {
             Contact me at{" "}
             <a
               href="mailto:camilorivera86@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="whitespace-nowrap text-lg font-semibold text-sky-500	"
             >
               <svg

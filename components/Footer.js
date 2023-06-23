@@ -16,6 +16,8 @@ export default function Footer() {
           <li>
             <a
               href="https://github.com/oncet/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="transition duration-300 hover:text-slate-300"
             >
               GitHub
@@ -24,6 +26,8 @@ export default function Footer() {
           <li>
             <a
               href="https://stackoverflow.com/users/1140065/camilo/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="transition duration-300 hover:text-slate-300"
             >
               Stack Overlow
@@ -32,6 +36,8 @@ export default function Footer() {
           <li>
             <a
               href="https://www.linkedin.com/in/camilorivera/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="transition duration-300 hover:text-slate-300"
             >
               LinkedIn
