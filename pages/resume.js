@@ -15,17 +15,27 @@ import LeanderGames from "@/components/experience/LeanderGames";
 import Persiscal from "@/components/experience/Persiscal";
 import Yappa from "@/components/experience/Yappa";
 
+const themeIcons = {
+  dark: "🌖",
+  light: "☀",
+  system: "💻",
+};
+
 export default function Home() {
-  const { theme, setTheme } = useTheme("dark");
+  const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isThemeMenuOpen, setIsThemeMenuOpen] = useState(false);
+  const [isExperienceExpanded, setIsExperienceExpanded] = useState(false);
+
+  console.log("isThemeMenuOpen", isThemeMenuOpen);
+  console.log("theme", theme);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   const onClickHandler = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setIsThemeMenuOpen(!isThemeMenuOpen);
   };
 
   return (
@@ -39,12 +49,33 @@ export default function Home() {
         />
       </Head>
       {mounted ? (
-        <button
-          className="absolute right-2 top-2 rounded-full [-webkit-tap-highlight-color:transparent] print:hidden"
-          onClick={onClickHandler}
-        >
-          {theme === "dark" ? "🌖" : "☀"}
-        </button>
+        <div className="absolute right-2 top-2 rounded-full ">
+          <button
+            className="rounded-full p-3 [-webkit-tap-highlight-color:transparent] print:hidden"
+            onClick={onClickHandler}
+          >
+            {themeIcons[theme]}
+          </button>
+          {isThemeMenuOpen ? (
+            <ul className="mt-1 flex flex-col gap-1 overflow-hidden rounded-full bg-slate-800  text-center">
+              {Object.keys(themeIcons).map((themeName) => (
+                <li key={themeName} className="">
+                  <button
+                    className="rounded-full p-3 [-webkit-tap-highlight-color:transparent]"
+                    onClick={() => {
+                      setTheme(themeName);
+                      setIsThemeMenuOpen(false);
+                    }}
+                  >
+                    {themeIcons[themeName]}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            ""
+          )}
+        </div>
       ) : (
         ""
       )}
@@ -62,15 +93,15 @@ export default function Home() {
                 <hr
                   className={
                     "border-1 absolute inset-y-1/2 w-full transition-opacity duration-1000 dark:border-slate-800 " +
-                    (isOpen ? "opacity-100" : "opacity-0")
+                    (isExperienceExpanded ? "opacity-100" : "opacity-0")
                   }
                 />
                 <button
-                  onClick={() => setIsOpen(true)}
-                  disabled={isOpen}
+                  onClick={() => setIsExperienceExpanded(true)}
+                  disabled={isExperienceExpanded}
                   className={
                     "relative rounded-lg border border-slate-300 bg-slate-200 px-4 py-2 font-semibold text-sky-600 transition-opacity [-webkit-tap-highlight-color:transparent] dark:border-slate-700 dark:bg-slate-800 dark:text-sky-500 " +
-                    (isOpen ? "opacity-0" : "opacity-100")
+                    (isExperienceExpanded ? "opacity-0" : "opacity-100")
                   }
                 >
                   View more
@@ -79,7 +110,7 @@ export default function Home() {
               <div
                 className={
                   "grid transition-all duration-1000 ease-in-out print:block print:opacity-100 " +
-                  (isOpen
+                  (isExperienceExpanded
                     ? "grid-rows-[1fr] opacity-100"
                     : "grid-rows-[0fr] opacity-0")
                 }
