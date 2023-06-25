@@ -34,12 +34,12 @@ export default function Home() {
       </Head>
       <div className={darkMode ? "dark" : ""}>
         <button
-          className="absolute right-2 top-2 rounded-full [-webkit-tap-highlight-color:transparent]"
+          className="absolute right-2 top-2 rounded-full [-webkit-tap-highlight-color:transparent] print:hidden"
           onClick={onClickHandler}
         >
           {darkMode ? "🌖" : "☀"}
         </button>
-        <div className="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+        <div className="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-200 print:!text-black">
           <Header />
           <main>
             <div className="mx-auto flex max-w-screen-md flex-col gap-7 px-4">
@@ -49,7 +49,7 @@ export default function Home() {
               <Educar2018 />
               <Gm2dev />
               <div>
-                <div className="relative text-center">
+                <div className="relative text-center print:hidden">
                   <hr
                     className={
                       "border-1 absolute inset-y-1/2 w-full transition-opacity duration-1000 dark:border-slate-800 " +
@@ -69,7 +69,7 @@ export default function Home() {
                 </div>
                 <div
                   className={
-                    "grid transition-all duration-1000 ease-in-out " +
+                    "grid transition-all duration-1000 ease-in-out print:grid-rows-[1fr] print:opacity-100 " +
                     (isOpen
                       ? "grid-rows-[1fr] opacity-100"
                       : "grid-rows-[0fr] opacity-0")

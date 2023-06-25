@@ -20,7 +20,7 @@ export default function Card({ title, subtitle, summary, children }) {
         <div className="pl-2">
           <div className="mb-3 flex justify-between">
             <h2 className="text-xl font-semibold">{title}</h2>
-            <button aria-label="Expand card">
+            <button aria-label="Expand card" className="print:hidden">
               <ToggleExpandIcon isOpen={isOpen} />
             </button>
           </div>
@@ -30,7 +30,7 @@ export default function Card({ title, subtitle, summary, children }) {
       </div>
       <div
         className={
-          "grid transition-all duration-300 ease-in-out " +
+          "grid transition-all duration-300 ease-in-out print:grid-rows-[1fr] print:opacity-100 " +
           (isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0")
         }
       >
