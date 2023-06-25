@@ -42,7 +42,7 @@ export default function Home() {
         <div className="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-200 print:!text-black">
           <Header />
           <main>
-            <div className="mx-auto flex max-w-screen-md flex-col gap-7 px-4">
+            <div className="mx-auto flex max-w-screen-md flex-col gap-7 px-4 print:gap-0">
               <Konfio />
               <Yappa />
               <Elementum />
@@ -69,14 +69,14 @@ export default function Home() {
                 </div>
                 <div
                   className={
-                    "grid transition-all duration-1000 ease-in-out print:grid-rows-[1fr] print:opacity-100 " +
+                    "grid transition-all duration-1000 ease-in-out print:block print:opacity-100 " +
                     (isOpen
                       ? "grid-rows-[1fr] opacity-100"
                       : "grid-rows-[0fr] opacity-0")
                   }
                 >
                   <div className="row-[1_/_span_2] overflow-hidden">
-                    <div className="mt-7 flex flex-col gap-7">
+                    <div className="mt-7 flex flex-col gap-7 print:gap-0">
                       <LeanderGames />
                       <Educar />
                       <Persiscal />

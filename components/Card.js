@@ -13,7 +13,7 @@ export default function Card({ title, subtitle, summary, children }) {
 
   return (
     <div
-      className="flex cursor-pointer flex-col rounded-lg bg-neutral-100 p-3 transition [-webkit-tap-highlight-color:transparent] dark:bg-slate-800/75	dark:hover:bg-slate-800"
+      className="flex cursor-pointer break-inside-avoid flex-col rounded-lg bg-neutral-100 p-3 transition [-webkit-tap-highlight-color:transparent]	dark:bg-slate-800/75 dark:hover:bg-slate-800"
       onClick={onClickHandler}
     >
       <div className="flex flex-col gap-4">
@@ -30,7 +30,7 @@ export default function Card({ title, subtitle, summary, children }) {
       </div>
       <div
         className={
-          "grid transition-all duration-300 ease-in-out print:grid-rows-[1fr] print:opacity-100 " +
+          "grid transition-all duration-300 ease-in-out print:block print:opacity-100 " +
           (isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0")
         }
       >
