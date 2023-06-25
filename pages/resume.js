@@ -58,19 +58,21 @@ export default function Home() {
           </button>
           {isThemeMenuOpen ? (
             <ul className="mt-1 flex flex-col gap-1 overflow-hidden rounded-full bg-slate-800  text-center">
-              {Object.keys(themeIcons).map((themeName) => (
-                <li key={themeName} className="">
-                  <button
-                    className="rounded-full p-3 [-webkit-tap-highlight-color:transparent]"
-                    onClick={() => {
-                      setTheme(themeName);
-                      setIsThemeMenuOpen(false);
-                    }}
-                  >
-                    {themeIcons[themeName]}
-                  </button>
-                </li>
-              ))}
+              {Object.keys(themeIcons)
+                .filter((themeName) => themeName !== theme)
+                .map((themeName) => (
+                  <li key={themeName} className="">
+                    <button
+                      className="rounded-full p-3 [-webkit-tap-highlight-color:transparent]"
+                      onClick={() => {
+                        setTheme(themeName);
+                        setIsThemeMenuOpen(false);
+                      }}
+                    >
+                      {themeIcons[themeName]}
+                    </button>
+                  </li>
+                ))}
             </ul>
           ) : (
             ""
