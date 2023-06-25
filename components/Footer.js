@@ -15,12 +15,22 @@ export default function Footer() {
           </li>
           <li>
             <a
+              href="https://www.linkedin.com/in/camilorivera/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition duration-300 hover:text-slate-800 dark:hover:text-slate-300"
+            >
+              linkedin.com/in/camilorivera
+            </a>
+          </li>
+          <li>
+            <a
               href="https://github.com/oncet/"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-slate-800 dark:hover:text-slate-300"
             >
-              GitHub
+              github.com/oncet
             </a>
           </li>
           <li>
@@ -30,17 +40,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="transition duration-300 hover:text-slate-800 dark:hover:text-slate-300"
             >
-              Stack Overlow
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/camilorivera/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition duration-300 hover:text-slate-800 dark:hover:text-slate-300"
-            >
-              LinkedIn
+              stackoverflow.com/users/1140065
             </a>
           </li>
         </ul>
