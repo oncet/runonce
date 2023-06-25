@@ -34,7 +34,7 @@ export default function Home() {
       </Head>
       <div className={darkMode ? "dark" : ""}>
         <button
-          className="absolute right-2 top-2 rounded-full"
+          className="absolute right-2 top-2 rounded-full [-webkit-tap-highlight-color:transparent]"
           onClick={onClickHandler}
         >
           {darkMode ? "🌖" : "☀"}
