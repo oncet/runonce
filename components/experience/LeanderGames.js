@@ -1,5 +1,4 @@
 import Card from "../Card";
-import Strong from "../Strong";
 import Subtitle from "../Subtitle";
 import TechList from "../TechList";
 import TechListItem from "../TechListItem";

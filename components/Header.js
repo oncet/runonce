@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import Strong from "./Strong";
 
 export default function Header({ children }) {
