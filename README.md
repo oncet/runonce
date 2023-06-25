@@ -8,3 +8,5 @@ My personal homepage, mostly for sharing my online resume.
 - Smooth animations 👋
 - Printer friendly 🖨️
 - And a beautiful design ✨
+
+Check it out at [runonce.io](https://www.runonce.io/)!
