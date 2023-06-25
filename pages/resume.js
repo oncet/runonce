@@ -42,7 +42,7 @@ export default function Home() {
         <div className="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-200 print:!text-black">
           <Header />
           <main>
-            <div className="mx-auto flex max-w-screen-md flex-col gap-7 px-4 print:gap-0">
+            <div className="mx-auto flex max-w-screen-md flex-col gap-7 px-4 print:max-w-none print:gap-3 print:px-0">
               <Konfio />
               <Yappa />
               <Elementum />
@@ -76,7 +76,7 @@ export default function Home() {
                   }
                 >
                   <div className="row-[1_/_span_2] overflow-hidden">
-                    <div className="mt-7 flex flex-col gap-7 print:gap-0">
+                    <div className="mt-7 flex flex-col gap-7 print:gap-3">
                       <LeanderGames />
                       <Educar />
                       <Persiscal />
