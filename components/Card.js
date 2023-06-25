@@ -13,7 +13,7 @@ export default function Card({ title, subtitle, summary, children }) {
 
   return (
     <div
-      className="flex cursor-pointer flex-col rounded-lg bg-slate-800/75 p-3 transition [-webkit-tap-highlight-color:transparent]	hover:bg-slate-800"
+      className="flex cursor-pointer flex-col rounded-lg bg-neutral-100 p-3 transition [-webkit-tap-highlight-color:transparent] dark:bg-slate-800/75	dark:hover:bg-slate-800"
       onClick={onClickHandler}
     >
       <div className="flex flex-col gap-4">
