@@ -16,7 +16,7 @@ import Persiscal from "@/components/experience/Persiscal";
 import Yappa from "@/components/experience/Yappa";
 
 export default function Home() {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme("dark");
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
