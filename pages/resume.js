@@ -1,10 +1,9 @@
-import { useTheme } from "next-themes";
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import MailIcon from "@/components/MailIcon";
+import MailIcon from "@/components/icons/MailIcon";
 import Educar from "@/components/experience/Educar";
 import Educar2018 from "@/components/experience/Educar2018";
 import Elementum from "@/components/experience/Elementum";
@@ -15,28 +14,8 @@ import LeanderGames from "@/components/experience/LeanderGames";
 import Persiscal from "@/components/experience/Persiscal";
 import Yappa from "@/components/experience/Yappa";
 
-const themeIcons = {
-  dark: "🌖",
-  light: "☀",
-  system: "💻",
-};
-
 export default function Home() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  const [isThemeMenuOpen, setIsThemeMenuOpen] = useState(false);
   const [isExperienceExpanded, setIsExperienceExpanded] = useState(false);
-
-  console.log("isThemeMenuOpen", isThemeMenuOpen);
-  console.log("theme", theme);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const onClickHandler = () => {
-    setIsThemeMenuOpen(!isThemeMenuOpen);
-  };
 
   return (
     <>
@@ -48,39 +27,6 @@ export default function Home() {
           key="desc"
         />
       </Head>
-      {mounted ? (
-        <div className="absolute right-2 top-2 rounded-full ">
-          <button
-            className="rounded-full p-3 [-webkit-tap-highlight-color:transparent] print:hidden"
-            onClick={onClickHandler}
-          >
-            {themeIcons[theme]}
-          </button>
-          {isThemeMenuOpen ? (
-            <ul className="mt-1 flex flex-col gap-1 overflow-hidden rounded-full bg-slate-800  text-center">
-              {Object.keys(themeIcons)
-                .filter((themeName) => themeName !== theme)
-                .map((themeName) => (
-                  <li key={themeName} className="">
-                    <button
-                      className="rounded-full p-3 [-webkit-tap-highlight-color:transparent]"
-                      onClick={() => {
-                        setTheme(themeName);
-                        setIsThemeMenuOpen(false);
-                      }}
-                    >
-                      {themeIcons[themeName]}
-                    </button>
-                  </li>
-                ))}
-            </ul>
-          ) : (
-            ""
-          )}
-        </div>
-      ) : (
-        ""
-      )}
       <div>
         <Header />
         <main>
