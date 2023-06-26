@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import ToggleExpandIcon from "./ToggleExpandIcon";
+import ToggleExpandIcon from "./icons/ToggleExpandIcon";
 
 export default function Card({ title, subtitle, summary, children }) {
   const [isOpen, setIsOpen] = useState(false);
