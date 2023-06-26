@@ -5,8 +5,14 @@ import ComputerIcon from "./icons/ComputerIcon";
 import MoonIcon from "./icons/MoonIcon";
 import SunIcon from "./icons/SunIcon";
 
+const themeIcons = {
+  light: <SunIcon />,
+  dark: <MoonIcon />,
+  system: <ComputerIcon />,
+};
+
 export default function ToggleDarkModeButton() {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [isThemeMenuOpen, setIsThemeMenuOpen] = useState(false);
 
@@ -21,60 +27,33 @@ export default function ToggleDarkModeButton() {
   return mounted ? (
     <div className="relative inline-block rounded-full print:hidden">
       <button
-        className="rounded-full p-3 text-sky-600 [-webkit-tap-highlight-color:transparent]"
+        className={
+          "rounded-full p-3 [-webkit-tap-highlight-color:transparent] " +
+          (["light", "dark"].includes(theme) ? "text-sky-600" : "")
+        }
         onClick={onClickHandler}
       >
-        {theme === "light" ? <SunIcon /> : ""}
-        {theme === "dark" ? <MoonIcon /> : ""}
-        {theme === "system" ? <ComputerIcon /> : ""}
+        {resolvedTheme === "light" ? <SunIcon /> : ""}
+        {resolvedTheme === "dark" ? <MoonIcon /> : ""}
       </button>
       {isThemeMenuOpen ? (
         <ul className="absolute mt-2 flex flex-col gap-1 overflow-hidden rounded-full bg-slate-200 text-center  dark:bg-slate-800">
-          {theme !== "light" ? (
-            <li>
+          {Object.keys(themeIcons).map((themeName) => (
+            <li key={themeName}>
               <button
-                className="rounded-full p-3 [-webkit-tap-highlight-color:transparent]"
+                className={
+                  "rounded-full p-3 [-webkit-tap-highlight-color:transparent] " +
+                  (themeName === theme ? "text-sky-600" : "")
+                }
                 onClick={() => {
-                  setTheme("light");
+                  setTheme(themeName);
                   setIsThemeMenuOpen(false);
                 }}
               >
-                <SunIcon />
+                {themeIcons[themeName]}
               </button>
             </li>
-          ) : (
-            ""
-          )}
-          {theme !== "dark" ? (
-            <li>
-              <button
-                className="rounded-full p-3 [-webkit-tap-highlight-color:transparent]"
-                onClick={() => {
-                  setTheme("dark");
-                  setIsThemeMenuOpen(false);
-                }}
-              >
-                <MoonIcon />
-              </button>
-            </li>
-          ) : (
-            ""
-          )}
-          {theme !== "system" ? (
-            <li>
-              <button
-                className="rounded-full p-3 [-webkit-tap-highlight-color:transparent]"
-                onClick={() => {
-                  setTheme("system");
-                  setIsThemeMenuOpen(false);
-                }}
-              >
-                <ComputerIcon />
-              </button>
-            </li>
-          ) : (
-            ""
-          )}
+          ))}
         </ul>
       ) : (
         ""
