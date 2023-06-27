@@ -57,26 +57,33 @@ export default function ToggleDarkModeButton() {
         >
           {resolvedTheme === "light" ? <SunIcon /> : <MoonIcon />}
         </button>
-        {isThemeMenuOpen && (
-          <ul className="absolute mt-2 flex flex-col gap-1 overflow-hidden rounded-full bg-slate-200 text-center  dark:bg-slate-800">
-            {Object.keys(themeIcons).map((themeName) => (
-              <li key={themeName}>
-                <button
-                  className={
-                    "rounded-full p-3 [-webkit-tap-highlight-color:transparent] " +
-                    (themeName === theme ? "text-sky-600" : "")
-                  }
-                  onClick={() => {
-                    setTheme(themeName);
-                    setIsThemeMenuOpen(false);
-                  }}
-                >
-                  {themeIcons[themeName]}
-                </button>
-              </li>
-            ))}
-          </ul>
-        )}
+        <di
+          className={
+            "transition-opacity " +
+            (isThemeMenuOpen ? "opacity-100" : "opacity-0")
+          }
+        >
+          {isThemeMenuOpen && (
+            <ul className="absolute mt-2 flex flex-col gap-1 overflow-hidden rounded-full bg-slate-200 text-center  dark:bg-slate-800">
+              {Object.keys(themeIcons).map((themeName) => (
+                <li key={themeName}>
+                  <button
+                    className={
+                      "rounded-full p-3 [-webkit-tap-highlight-color:transparent] " +
+                      (themeName === theme ? "text-sky-600" : "")
+                    }
+                    onClick={() => {
+                      setTheme(themeName);
+                      setIsThemeMenuOpen(false);
+                    }}
+                  >
+                    {themeIcons[themeName]}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+        </di>
       </div>
     )
   );
