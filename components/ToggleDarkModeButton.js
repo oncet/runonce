@@ -1,5 +1,5 @@
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import ComputerIcon from "./icons/ComputerIcon";
 import MoonIcon from "./icons/MoonIcon";
@@ -12,13 +12,30 @@ const themeIcons = {
 };
 
 export default function ToggleDarkModeButton() {
+  const rootRef = useRef();
   const { theme, setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [isThemeMenuOpen, setIsThemeMenuOpen] = useState(false);
 
+  const handler = (event) => {
+    if (!rootRef.current.contains(event.target)) {
+      setIsThemeMenuOpen(false);
+    }
+  };
+
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (isThemeMenuOpen) {
+      document.addEventListener("click", handler);
+    }
+
+    return () => {
+      document.removeEventListener("click", handler);
+    };
+  }, [isThemeMenuOpen]);
 
   const onClickHandler = () => {
     setIsThemeMenuOpen(!isThemeMenuOpen);
@@ -26,7 +43,10 @@ export default function ToggleDarkModeButton() {
 
   return (
     mounted && (
-      <div className="relative inline-block rounded-full print:hidden">
+      <div
+        className="relative inline-block rounded-full print:hidden"
+        ref={rootRef}
+      >
         <button
           className={
             "rounded-full p-3 [-webkit-tap-highlight-color:transparent] " +
