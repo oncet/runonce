@@ -33,6 +33,7 @@ export default function ToggleDarkModeButton() {
             (["light", "dark"].includes(theme) ? "text-sky-600" : "")
           }
           onClick={onClickHandler}
+          aria-label="Change theme"
         >
           {resolvedTheme === "light" ? <SunIcon /> : <MoonIcon />}
         </button>
