@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>runonce</title>
+        <title>Camilo Rivera / Software Engineer</title>
         <meta
           name="description"
           content="Experienced developer proficient in TypeScript, React, Node.js, and SQL."
