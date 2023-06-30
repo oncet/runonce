@@ -74,7 +74,7 @@ export default function ToggleDarkModeButton() {
                     }
                     onClick={() => {
                       console.log("Change theme!");
-                      // setTheme(themeName);
+                      setTheme(themeName);
                       setIsThemeMenuOpen(false);
                     }}
                   >
