@@ -26,6 +26,7 @@ export default function Home() {
           content="Experienced developer proficient in TypeScript, React, Node.js, and SQL."
           key="desc"
         />
+        <meta property="og:image" content="https://runonce.io/og.jpg" />
       </Head>
       <Header />
       <main>
