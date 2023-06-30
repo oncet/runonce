@@ -19,6 +19,7 @@ export default function Yappa() {
         <TechList>
           <TechListItem>MySQL</TechListItem>
           <TechListItem>Nest.js</TechListItem>
+          <TechListItem>Node.js</TechListItem>
           <TechListItem>REST API</TechListItem>
           <TechListItem>TypeScript</TechListItem>
           <TechListItem>Vue.js</TechListItem>
