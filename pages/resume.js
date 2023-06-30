@@ -73,7 +73,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-8 bg-slate-200 py-8 text-center dark:bg-slate-800 sm:text-left">
+        <div className="mt-8 bg-slate-200 py-6 text-center dark:bg-slate-800 sm:text-left">
           <p className="mx-auto max-w-screen-md px-4 text-slate-800 dark:text-slate-400">
             Contact me at{" "}
             <a

@@ -57,7 +57,7 @@ export default function ToggleDarkModeButton() {
         >
           {resolvedTheme === "light" ? <SunIcon /> : <MoonIcon />}
         </button>
-        <di
+        <div
           className={
             "transition-opacity " +
             (isThemeMenuOpen ? "opacity-100" : "opacity-0")
@@ -73,7 +73,8 @@ export default function ToggleDarkModeButton() {
                       (themeName === theme ? "text-sky-600" : "")
                     }
                     onClick={() => {
-                      setTheme(themeName);
+                      console.log("Change theme!");
+                      // setTheme(themeName);
                       setIsThemeMenuOpen(false);
                     }}
                   >
@@ -83,7 +84,7 @@ export default function ToggleDarkModeButton() {
               ))}
             </ul>
           )}
-        </di>
+        </div>
       </div>
     )
   );
