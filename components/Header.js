@@ -10,9 +10,11 @@ export default function Header() {
   return (
     <header>
       <div className="border-b border-slate-200 dark:border-slate-800 print:hidden">
-        <div className="mx-auto flex h-12 max-w-screen-md items-center justify-between px-4 text-right text-slate-400">
+        <div className="mx-auto flex h-12 max-w-screen-md items-center justify-between px-4 text-right dark:text-slate-400">
           <div>
-            <Link href="/">runonce.io</Link>
+            <Link href="/" className="transition dark:hover:text-slate-300">
+              runonce.io
+            </Link>
           </div>
           <div className="flex gap-4">
             <ToggleDarkModeButton />

@@ -49,7 +49,7 @@ export default function ToggleDarkModeButton() {
       >
         <button
           className={
-            "rounded-full p-3 [-webkit-tap-highlight-color:transparent] " +
+            "rounded-full p-3 transition [-webkit-tap-highlight-color:transparent] " +
             (["light", "dark"].includes(theme) ? "text-sky-600" : "")
           }
           onClick={onClickHandler}
