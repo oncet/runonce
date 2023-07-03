@@ -15,17 +15,17 @@ import Image10 from "../public/photos/DSC02865.jpg";
 import Image11 from "../public/photos/DSC02929.jpg";
 
 const photos = [
-  { image: Image1, alt: "Image 1", priority: true },
-  { image: Image2, alt: "Image 2" },
-  { image: Image3, alt: "Image 3" },
-  { image: Image4, alt: "Image 4" },
-  { image: Image5, alt: "Image 5" },
-  { image: Image6, alt: "Image 6" },
-  { image: Image7, alt: "Image 7" },
-  { image: Image8, alt: "Image 8" },
-  { image: Image9, alt: "Image 9" },
-  { image: Image10, alt: "Image 10" },
-  { image: Image11, alt: "Image 11" },
+  { id: "DSC01884", src: Image1, alt: "Image 1", priority: true },
+  { id: "DSC01943", src: Image2, alt: "Image 2" },
+  { id: "DSC01954", src: Image3, alt: "Image 3" },
+  { id: "DSC01972", src: Image4, alt: "Image 4" },
+  { id: "DSC02167", src: Image5, alt: "Image 5" },
+  { id: "DSC02185", src: Image6, alt: "Image 6" },
+  { id: "DSC02276", src: Image7, alt: "Image 7" },
+  { id: "DSC02719", src: Image8, alt: "Image 8" },
+  { id: "DSC02779", src: Image9, alt: "Image 9" },
+  { id: "DSC02865", src: Image10, alt: "Image 10" },
+  { id: "DSC02929", src: Image11, alt: "Image 11" },
 ];
 
 export default function Home() {
@@ -50,14 +50,15 @@ export default function Home() {
           </p>
         </div>
         <div className="mx-auto mb-8 mt-8 grid max-w-screen-xl gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {photos.map(({ image, alt, priority }) => (
-            <Image
-              key={alt}
-              src={image}
-              alt={alt}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              priority={priority}
-            />
+          {photos.map(({ id, src, alt, priority }) => (
+            <Link key={id} href={alt}>
+              <Image
+                priority={priority}
+                src={src}
+                alt={alt}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </Link>
           ))}
         </div>
       </main>
