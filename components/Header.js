@@ -27,6 +27,7 @@ export default function Header() {
           src={profilePic}
           alt="Me using an old MSX-like computer"
           className="h-32 w-32 rounded-full print:hidden"
+          priority
         />
         <div className="max-w-screen-md print:flex print:max-w-none print:flex-row print:justify-between">
           <div className="flex break-inside-avoid flex-col gap-4 text-center print:pt-0 print:text-left">
