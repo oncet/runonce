@@ -48,7 +48,7 @@ export default function Home() {
                 onClick={() => setIsExperienceExpanded(true)}
                 disabled={isExperienceExpanded}
                 className={
-                  "relative rounded-lg border border-slate-300 bg-slate-200 px-4 py-2 font-semibold text-sky-600 transition-opacity [-webkit-tap-highlight-color:transparent] dark:border-slate-700 dark:bg-slate-800 dark:text-sky-500 " +
+                  "relative rounded-lg border border-white bg-white px-4 py-2 font-semibold text-slate-700 outline outline-2 outline-blue-400 transition-opacity [-webkit-tap-highlight-color:transparent] dark:border-slate-700 dark:bg-slate-800 dark:text-sky-500 " +
                   (isExperienceExpanded ? "opacity-0" : "opacity-100")
                 }
               >
