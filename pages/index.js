@@ -19,12 +19,15 @@ export default function Home() {
         </h1>
       </header>
       <main className="mx-auto max-w-screen-md px-6">
-        <p className="mb-4 text-lg text-slate-300 [text-wrap:balance]">
+        <p className="mb-4 text-lg [text-wrap:balance] dark:text-slate-300">
           Hi, welcome to my homepage! My name is Camilo and I love coding.
         </p>
-        <p className="mb-20 text-lg text-slate-300 [text-wrap:balance]">
+        <p className="mb-20 text-lg [text-wrap:balance] dark:text-slate-300">
           Checkout my{" "}
-          <Link href="resume" className="font-bold text-sky-400">
+          <Link
+            href="resume"
+            className="font-bold text-sky-600 dark:text-sky-400"
+          >
             resume
           </Link>
           .
