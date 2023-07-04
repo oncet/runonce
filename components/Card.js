@@ -13,7 +13,10 @@ export default function Card({ title, subtitle, summary, children }) {
 
   return (
     <div
-      className="flex cursor-pointer break-inside-avoid flex-col rounded-lg bg-neutral-100 p-3 transition [-webkit-tap-highlight-color:transparent] dark:bg-slate-800/75	dark:hover:bg-slate-800 print:p-0"
+      className={
+        "flex cursor-pointer break-inside-avoid flex-col rounded-lg bg-slate-50 p-3 outline outline-2  transition transition-[outline-color] [-webkit-tap-highlight-color:transparent] dark:bg-slate-800/75	dark:hover:bg-slate-800 print:p-0 " +
+        (isOpen ? "outline-slate-400" : "outline-slate-200")
+      }
       onClick={onClickHandler}
     >
       <div className="flex flex-col gap-4">
