@@ -2,8 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import MailIcon from "@/components/icons/MailIcon";
+import Header from "@/components/ResumeHeader";
 import Educar from "@/components/experience/Educar";
 import Educar2018 from "@/components/experience/Educar2018";
 import Elementum from "@/components/experience/Elementum";
@@ -13,6 +12,7 @@ import Konfio from "@/components/experience/Konfio";
 import LeanderGames from "@/components/experience/LeanderGames";
 import Persiscal from "@/components/experience/Persiscal";
 import Yappa from "@/components/experience/Yappa";
+import MailIcon from "@/components/icons/MailIcon";
 
 export default function Home() {
   const [isExperienceExpanded, setIsExperienceExpanded] = useState(false);
@@ -28,8 +28,8 @@ export default function Home() {
         />
         <meta property="og:image" content="https://runonce.io/og.jpg" />
       </Head>
-      <Header />
       <main>
+        <Header />
         <div className="mx-auto flex max-w-screen-md flex-col gap-7 px-4 print:max-w-none print:gap-3 print:px-0">
           <Konfio />
           <Yappa />

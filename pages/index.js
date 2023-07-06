@@ -13,14 +13,12 @@ export default function Home() {
         />
         <meta property="og:image" content="https://runonce.io/og.jpg" />
       </Head>
-      <header className="mx-auto mb-4 max-w-screen-md px-6 pt-4 sm:pt-8">
-        <h1 className="text-4xl font-extrabold lowercase tracking-tight">
+      <main className="mx-auto w-full max-w-screen-md px-4">
+        <h1 className="my-4 text-4xl font-extrabold lowercase tracking-tight">
           Runonce
         </h1>
-      </header>
-      <main className="mx-auto max-w-screen-md px-6">
         <p className="mb-4 text-lg [text-wrap:balance] dark:text-slate-300">
-          Hi, welcome to my homepage! My name is Camilo and I love coding.
+          Hi, welcome to my homepage! My name is Camilo and I like coding.
         </p>
         <p className="mb-20 text-lg [text-wrap:balance] dark:text-slate-300">
           Checkout my{" "}

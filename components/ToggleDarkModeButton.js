@@ -73,7 +73,6 @@ export default function ToggleDarkModeButton() {
                       (themeName === theme ? "text-sky-600" : "")
                     }
                     onClick={() => {
-                      console.log("Change theme!");
                       setTheme(themeName);
                       setIsThemeMenuOpen(false);
                     }}

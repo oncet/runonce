@@ -27,8 +27,6 @@ export const getStaticProps = (context) => {
 export default function Home({ photo }) {
   const router = useRouter();
 
-  console.log("photo", photo);
-
   return (
     <>
       <Head>
@@ -40,21 +38,19 @@ export default function Home({ photo }) {
         />
         <meta property="og:image" content="https://runonce.io/og.jpg" />
       </Head>
-      <div className="mx-auto max-w-screen-lg px-2">
-        <header className="mx-auto max-w-screen-md pb-4 pt-4">
-          <h1 className="text-xl font-thin lowercase tracking-wide text-slate-400">
-            Photo #{router.query.id}
+      <main className="mx-auto flex max-w-screen-lg grow flex-col">
+        <div>
+          <Image
+            src={photo.src}
+            alt={photo.alt}
+            priority
+            quality={100}
+            className="mb-4 mt-8 max-h-full max-w-full sm:px-4"
+          />
+          <h1 className="px-4 text-right text-xl font-thin tracking-wide dark:text-slate-400">
+            {router.query.id}
           </h1>
-        </header>
-      </div>
-      <main className="mx-auto max-w-screen-md">
-        <Image
-          src={photo.src}
-          alt={photo.alt}
-          priority
-          quality={100}
-          className="max-h-full max-w-full"
-        />
+        </div>
       </main>
     </>
   );
