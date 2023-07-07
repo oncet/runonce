@@ -7,7 +7,8 @@ export default function ToggleExpandIcon({ isOpen }) {
       strokeWidth={1.5}
       stroke="currentColor"
       className={
-        "h-6 w-6 stroke-slate-400 transition " + (isOpen ? "scale-y-[-1]" : "")
+        "h-6 w-6 stroke-slate-400 transition duration-300 " +
+        (isOpen ? "scale-y-[-1]" : "")
       }
     >
       <path
