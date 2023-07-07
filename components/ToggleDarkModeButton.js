@@ -4,11 +4,17 @@ import { useEffect, useRef, useState } from "react";
 import ComputerIcon from "./icons/ComputerIcon";
 import MoonIcon from "./icons/MoonIcon";
 import SunIcon from "./icons/SunIcon";
+import PhoneIcon from "./icons/PhoneIcon";
 
 const themeIcons = {
   light: <SunIcon />,
   dark: <MoonIcon />,
-  system: <ComputerIcon />,
+  system: (
+    <>
+      <ComputerIcon />
+      <PhoneIcon />
+    </>
+  ),
 };
 
 export default function ToggleDarkModeButton() {

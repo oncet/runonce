@@ -6,7 +6,7 @@ export default function ComputerIcon() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="h-6 w-6"
+      className="hidden h-6 w-6 sm:block"
     >
       <path
         strokeLinecap="round"
