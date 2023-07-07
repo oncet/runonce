@@ -14,7 +14,7 @@ export default function Home() {
         <meta property="og:image" content="https://runonce.io/og.jpg" />
       </Head>
       <main className="mx-auto w-full max-w-screen-md px-4">
-        <h1 className="my-4 text-4xl font-extrabold lowercase tracking-tight">
+        <h1 className="my-4 text-6xl font-extrabold lowercase tracking-tight drop-shadow dark:drop-shadow-none">
           Runonce
         </h1>
         <p className="mb-4 text-lg [text-wrap:balance] dark:text-slate-300">
