@@ -25,12 +25,12 @@ export default function Home() {
             I also do amateur photography.
           </p>
         </div>
-        <div className="mx-auto mb-8 mt-0 grid max-w-screen-md gap-1 px-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mb-8 mt-0 grid max-w-screen-md gap-4 px-4 md:grid-cols-2 lg:grid-cols-3">
           {photos.map(({ id, src, alt, priority }) => (
             <Link
               key={id}
               href={"/photo/" + id}
-              className="cursor-zoom-in overflow-hidden rounded-lg border-4 border-slate-900 transition-all first:col-span-2 first:row-span-2 hover:border-slate-700"
+              className="cursor-zoom-in overflow-hidden rounded-lg ring-4 ring-slate-900 transition-all first:col-span-2 first:row-span-2 hover:ring-slate-700"
             >
               <Image
                 priority={priority}
