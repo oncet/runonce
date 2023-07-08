@@ -20,6 +20,6 @@ export const photos = [
   { id: "DSC02276", src: Image7, alt: "Image 7" },
   { id: "DSC02719", src: Image8, alt: "Image 8" },
   { id: "DSC02779", src: Image9, alt: "Image 9" },
-  { id: "DSC02865", src: Image10, alt: "Image 10" },
-  { id: "DSC02929", src: Image11, alt: "Image 11" },
+  // { id: "DSC02865", src: Image10, alt: "Image 10" },
+  // { id: "DSC02929", src: Image11, alt: "Image 11" },
 ];

@@ -21,18 +21,23 @@ export default function Home() {
           <h1 className="my-4 text-4xl font-extrabold lowercase tracking-tight">
             Photos
           </h1>
-          <p className="mb-4 text-lg [text-wrap:balance] dark:text-slate-300">
+          <p className="mb-4 text-lg [text-wrap:balance] dark:text-slate-400">
             I also do amateur photography.
           </p>
         </div>
-        <div className="mx-auto mb-8 mt-8 grid max-w-screen-xl gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mb-8 mt-0 grid max-w-screen-md gap-1 px-4 md:grid-cols-2 lg:grid-cols-3">
           {photos.map(({ id, src, alt, priority }) => (
-            <Link key={id} href={"/photo/" + id}>
+            <Link
+              key={id}
+              href={"/photo/" + id}
+              className="cursor-zoom-in overflow-hidden rounded-lg border-4 border-slate-900 transition-all first:col-span-2 first:row-span-2 hover:border-slate-700"
+            >
               <Image
                 priority={priority}
                 src={src}
                 alt={alt}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="h-full"
               />
             </Link>
           ))}

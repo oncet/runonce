@@ -38,7 +38,7 @@ export default function Home({ photo }) {
         />
         <meta property="og:image" content="https://runonce.io/og.jpg" />
       </Head>
-      <main className="mx-auto flex max-w-screen-lg grow flex-col">
+      <main className="mx-auto flex max-w-screen-md grow flex-col">
         <div>
           <Image
             src={photo.src}
