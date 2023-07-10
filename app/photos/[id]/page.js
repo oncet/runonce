@@ -10,7 +10,7 @@ export default function Photo({ params }) {
   const photo = photos.find(({ id }) => id === params.id);
 
   const onClickHandler = () => {
-    router.push("/photos");
+    router.push("/photos", { scroll: false });
   };
 
   return (
