@@ -22,7 +22,6 @@ export default function Photo({ params }) {
         src={photo.src}
         alt={photo.alt}
         className="max-h-full object-contain"
-        placeholder="blur"
       />
     </div>
   );
