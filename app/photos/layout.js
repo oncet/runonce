@@ -38,6 +38,7 @@ export default function Home({ children }) {
                 alt={alt}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="h-full"
+                placeholder="blur"
               />
             </Link>
           ))}
