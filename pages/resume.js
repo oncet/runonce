@@ -35,7 +35,7 @@ export default function Home() {
           <Educar2018 />
           <Gm2dev />
           <FadeInOnEntry>
-            <hr className="border-1 dark:border-slate-800" />
+            <hr className="border-1 dark:border-slate-800 print:hidden" />
             <LeanderGames />
           </FadeInOnEntry>
           <FadeInOnEntry>
