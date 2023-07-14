@@ -24,7 +24,9 @@ export default function FadeInOnEntry({ children }) {
       ref={wrapperRef}
       className={
         "transition delay-75 duration-500 print:opacity-100 " +
-        (isIntersecting ? "opacity-100" : "opacity-0")
+        (isIntersecting
+          ? "translate-x-0 opacity-100"
+          : "translate-y-8 opacity-0")
       }
     >
       {children}
