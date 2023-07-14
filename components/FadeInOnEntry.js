@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 export default function FadeInOnEntry({ children }) {
-  const divRef = useRef();
+  const wrapperRef = useRef();
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
@@ -9,19 +9,19 @@ export default function FadeInOnEntry({ children }) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setIsIntersecting(true);
-          observer.unobserve(divRef.current);
+          observer.unobserve(wrapperRef.current);
         }
       });
     };
 
     const observer = new IntersectionObserver(callback);
 
-    observer.observe(divRef.current);
+    observer.observe(wrapperRef.current);
   }, []);
 
   return (
     <div
-      ref={divRef}
+      ref={wrapperRef}
       className={
         "flex flex-col gap-7 transition delay-75 duration-500 print:opacity-100 " +
         (isIntersecting ? "opacity-100" : "opacity-0")
