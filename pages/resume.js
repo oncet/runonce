@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useState } from "react";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/ResumeHeader";
@@ -13,10 +12,9 @@ import LeanderGames from "@/components/experience/LeanderGames";
 import Persiscal from "@/components/experience/Persiscal";
 import Yappa from "@/components/experience/Yappa";
 import MailIcon from "@/components/icons/MailIcon";
+import FadeInOnEntry from "@/components/FadeInOnEntry";
 
 export default function Home() {
-  const [isExperienceExpanded, setIsExperienceExpanded] = useState(false);
-
   return (
     <>
       <Head>
@@ -36,43 +34,19 @@ export default function Home() {
           <Elementum />
           <Educar2018 />
           <Gm2dev />
-          <div>
-            <div className="relative text-center print:hidden">
-              <hr
-                className={
-                  "border-1 absolute inset-y-1/2 w-full transition-opacity duration-1000 dark:border-slate-800 " +
-                  (isExperienceExpanded ? "opacity-100" : "opacity-0")
-                }
-              />
-              <button
-                onClick={() => setIsExperienceExpanded(true)}
-                disabled={isExperienceExpanded}
-                className={
-                  "relative rounded-lg border border-white bg-white px-4 py-2 font-semibold text-slate-700 outline outline-2 outline-blue-400 transition-opacity [-webkit-tap-highlight-color:transparent] dark:border-slate-700 dark:bg-slate-800 dark:text-sky-500 " +
-                  (isExperienceExpanded ? "opacity-0" : "opacity-100")
-                }
-              >
-                View more
-              </button>
-            </div>
-            <div
-              className={
-                "grid transition-all duration-1000 ease-in-out print:block print:opacity-100 " +
-                (isExperienceExpanded
-                  ? "grid-rows-[1fr] opacity-100"
-                  : "grid-rows-[0fr] opacity-0")
-              }
-            >
-              <div className="row-[1_/_span_2] overflow-hidden">
-                <div className="mt-7 flex flex-col gap-7 print:gap-3">
-                  <LeanderGames />
-                  <Educar />
-                  <Persiscal />
-                  <EntornosEducativos />
-                </div>
-              </div>
-            </div>
-          </div>
+          <FadeInOnEntry>
+            <hr className="border-1 dark:border-slate-800" />
+            <LeanderGames />
+          </FadeInOnEntry>
+          <FadeInOnEntry>
+            <Educar />
+          </FadeInOnEntry>
+          <FadeInOnEntry>
+            <Persiscal />
+          </FadeInOnEntry>
+          <FadeInOnEntry>
+            <EntornosEducativos />
+          </FadeInOnEntry>
         </div>
         <div className="mt-8 bg-slate-200 py-6 text-center dark:bg-slate-800 sm:text-left">
           <p className="mx-auto max-w-screen-md px-4 text-slate-800 dark:text-slate-400">
