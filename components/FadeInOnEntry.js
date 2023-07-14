@@ -23,7 +23,7 @@ export default function FadeInOnEntry({ children }) {
     <div
       ref={wrapperRef}
       className={
-        "flex flex-col gap-7 transition delay-75 duration-500 print:opacity-100 " +
+        "transition delay-75 duration-500 print:opacity-100 " +
         (isIntersecting ? "opacity-100" : "opacity-0")
       }
     >

@@ -34,8 +34,8 @@ export default function Home() {
           <Elementum />
           <Educar2018 />
           <Gm2dev />
+          <hr className="border-1 dark:border-slate-800 print:hidden" />
           <FadeInOnEntry>
-            <hr className="border-1 dark:border-slate-800 print:hidden" />
             <LeanderGames />
           </FadeInOnEntry>
           <FadeInOnEntry>
