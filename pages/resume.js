@@ -48,6 +48,32 @@ export default function Home() {
             <EntornosEducativos />
           </FadeInOnEntry>
         </div>
+        {/* <div className="mx-auto mt-8 max-w-screen-md px-4">
+          <blockquote cite="https://addyosmani.com/blog/good-code/">
+            <p className="text-center text-3xl font-thin tracking-wide text-slate-300 [text-wrap:balance]">
+              Good code is like a love letter to the next developer who will
+              maintain it.
+            </p>
+            <footer className="mt-5 text-right text-slate-400">
+              <div className="font-bold">Addy Osmani</div>
+              <cite className="text-sm not-italic text-slate-400">
+                Learning JavaScript Design Patterns
+              </cite>
+            </footer>
+          </blockquote>
+          <blockquote cite="https://addyosmani.com/blog/good-code/">
+            <p className="text-center text-3xl font-thin tracking-wide [text-wrap:balance]">
+              You should name a variable using the same care with which you name
+              a first-born child.
+            </p>
+            <footer className="mt-5 text-right text-slate-400">
+              <div className="font-bold">Robert C. Martin</div>
+              <cite className="text-sm not-italic text-slate-400">
+                Clean Code: A Handbook of Agile Software Craftsmanship
+              </cite>
+            </footer>
+          </blockquote>
+        </div> */}
         <div className="mt-8 bg-slate-200 py-6 text-center dark:bg-slate-800 sm:text-left">
           <p className="mx-auto max-w-screen-md px-4 text-slate-800 dark:text-slate-400">
             Contact me at{" "}
