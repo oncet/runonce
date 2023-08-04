@@ -16,8 +16,8 @@ export default function Header() {
           </Link>
         </div>
         <div className="flex gap-4">
-          <PrintButton />
           <ToggleDarkModeButton />
+          <PrintButton />
         </div>
       </div>
     </header>
