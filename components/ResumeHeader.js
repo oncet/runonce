@@ -18,7 +18,7 @@ export default function Header() {
           <div className="flex flex-col gap-3 print:mt-4">
             <h1 className="text-4xl font-bold tracking-wide">Camilo Rivera</h1>
             <p className="text-2xl font-thin tracking-wide">
-              Senior software engineer
+              Software engineer
             </p>
           </div>
           <p className="text-xl text-slate-300 [text-wrap:balance] dark:text-slate-400">
