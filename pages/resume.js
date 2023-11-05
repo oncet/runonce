@@ -13,6 +13,7 @@ import Persiscal from "@/components/experience/Persiscal";
 import Yappa from "@/components/experience/Yappa";
 import MailIcon from "@/components/icons/MailIcon";
 import FadeInOnEntry from "@/components/FadeInOnEntry";
+import Tromzo from "@/components/experience/Tromzo";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <main>
         <Header />
         <div className="mx-auto flex max-w-screen-md flex-col gap-7 px-4 print:max-w-none print:gap-3 print:px-0">
+          <Tromzo />
           <Konfio />
           <Yappa />
           <Elementum />
