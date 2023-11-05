@@ -35,8 +35,10 @@ export default function Home() {
           <Yappa />
           <Elementum />
           <Educar2018 />
-          <Gm2dev />
           <hr className="border-1 dark:border-slate-800 print:hidden" />
+          <FadeInOnEntry>
+            <Gm2dev />
+          </FadeInOnEntry>
           <FadeInOnEntry>
             <LeanderGames />
           </FadeInOnEntry>
