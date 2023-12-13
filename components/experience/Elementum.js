@@ -43,9 +43,12 @@ export default function Elementum() {
         <li>
           Fine tuned <Strong>webpack</Strong> configurations and implemented
           other key optimizations, such as tree shaking, code splitting, and
-          lazy loading. The results included a 75% reduction in{" "}
-          <code>npm install</code> time and a 70% improvement in overall
-          Lighthouse score, enhancing both the user and developer experience.
+          lazy loading. The results included a{" "}
+          <strong>
+            75% reduction in <code>npm install</code> time and a 70% improvement
+            in overall Lighthouse score
+          </strong>
+          , enhancing both the user and developer experience.
         </li>
         <li>
           Implemented Module Federation as a potential replacement for an
