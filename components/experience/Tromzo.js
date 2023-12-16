@@ -31,14 +31,9 @@ export default function Tromzo() {
           Creating new <Strong>React</Strong> components using{" "}
           <Strong>Material UI</Strong>.
         </li>
-        <li>Implementing new features on the web app.</li>
         <li>
           Adding tests with <Strong>Jest</Strong> and{" "}
           <Strong>React Testing Library</Strong>.
-        </li>
-        <li>
-          Started new initiatives to improve collaboration between the frontend
-          and design teams.
         </li>
       </Ul>
     </Card>
