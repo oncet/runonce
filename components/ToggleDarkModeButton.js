@@ -77,26 +77,28 @@ export default function ToggleDarkModeButton() {
         >
           {isThemeMenuOpen && (
             <ul className="absolute z-40 mt-2 flex flex-col gap-1 overflow-hidden rounded-full bg-slate-200 text-center  terminal:rounded-none terminal:bg-orange-500 terminal:text-orange-800 dark:bg-slate-800">
-              {Object.keys(themeIcons).map((themeName) => (
-                <li key={themeName}>
-                  <button
-                    title={themeName}
-                    aria-label={themeName}
-                    className={
-                      "rounded-full p-3 [-webkit-tap-highlight-color:transparent] " +
-                      (themeName.toLowerCase() === theme
-                        ? "text-sky-600 terminal:text-yellow-400"
-                        : "")
-                    }
-                    onClick={() => {
-                      setTheme(themeName.toLowerCase());
-                      setIsThemeMenuOpen(false);
-                    }}
-                  >
-                    {themeIcons[themeName]}
-                  </button>
-                </li>
-              ))}
+              {Object.keys(themeIcons)
+                .filter((themeIcon) => themeIcon !== "Terminal")
+                .map((themeName) => (
+                  <li key={themeName}>
+                    <button
+                      title={themeName}
+                      aria-label={themeName}
+                      className={
+                        "rounded-full p-3 [-webkit-tap-highlight-color:transparent] " +
+                        (themeName.toLowerCase() === theme
+                          ? "text-sky-600 terminal:text-yellow-400"
+                          : "")
+                      }
+                      onClick={() => {
+                        setTheme(themeName.toLowerCase());
+                        setIsThemeMenuOpen(false);
+                      }}
+                    >
+                      {themeIcons[themeName]}
+                    </button>
+                  </li>
+                ))}
             </ul>
           )}
         </div>
