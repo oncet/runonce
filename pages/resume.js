@@ -35,7 +35,7 @@ export default function Home() {
           <Yappa />
           <Elementum />
           <Educar2018 />
-          <hr className="border-1 terminal:border-orange-800 dark:border-slate-800 print:hidden" />
+          <hr className="border-1 terminal:border-dashed terminal:border-orange-800 dark:border-slate-800 print:hidden" />
           <FadeInOnEntry>
             <Gm2dev />
           </FadeInOnEntry>
@@ -79,7 +79,7 @@ export default function Home() {
           </blockquote>
         </div> */}
         <div className="mt-8 bg-slate-200 py-6 text-center terminal:bg-orange-500 dark:bg-slate-800 sm:text-left">
-          <p className="mx-auto max-w-screen-md px-4 text-slate-800 terminal:text-orange-800 dark:text-slate-400">
+          <p className="mx-auto max-w-screen-md px-4 text-slate-800 terminal:text-yellow-200 dark:text-slate-400">
             Contact me at{" "}
             <a
               href="mailto:camilorivera86@gmail.com"

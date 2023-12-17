@@ -14,7 +14,7 @@ export default function Card({ title, subtitle, summary, children }) {
   return (
     <div
       className={
-        "flex cursor-pointer break-inside-avoid flex-col rounded-lg border-2 bg-slate-50 p-3 transition-all duration-300 [-webkit-tap-highlight-color:transparent] terminal:rounded-none terminal:border-[2px] terminal:border-orange-500	terminal:bg-gray-950 dark:border-slate-800/75 dark:bg-slate-800/75 dark:hover:bg-slate-800 print:border-none print:p-0 " +
+        "flex cursor-pointer break-inside-avoid flex-col rounded-lg border-2 bg-slate-50 p-3 transition-all duration-300 [-webkit-tap-highlight-color:transparent] terminal:rounded-none terminal:border-[2px] terminal:border-dashed	terminal:border-orange-500 terminal:bg-gray-950 dark:border-slate-800/75 dark:bg-slate-800/75 dark:hover:bg-slate-800 print:border-none print:p-0 " +
         (isOpen ? "border-slate-400" : "border-slate-200")
       }
       onClick={onClickHandler}
