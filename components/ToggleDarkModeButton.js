@@ -7,9 +7,9 @@ import SunIcon from "./icons/SunIcon";
 import PhoneIcon from "./icons/PhoneIcon";
 
 const themeIcons = {
-  light: <SunIcon />,
-  dark: <MoonIcon />,
-  system: (
+  Light: <SunIcon />,
+  Dark: <MoonIcon />,
+  System: (
     <>
       <ComputerIcon />
       <PhoneIcon />
@@ -56,12 +56,12 @@ export default function ToggleDarkModeButton() {
         <button
           className={
             "rounded-full p-3 transition [-webkit-tap-highlight-color:transparent] " +
-            (["light", "dark"].includes(theme) ? "text-sky-600" : "")
+            (["Light", "Dark"].includes(theme) ? "text-sky-600" : "")
           }
           onClick={onClickHandler}
           aria-label="Change theme"
         >
-          {resolvedTheme === "light" ? <SunIcon /> : <MoonIcon />}
+          {resolvedTheme === "Light" ? <SunIcon /> : <MoonIcon />}
         </button>
         <div
           className={
@@ -74,12 +74,14 @@ export default function ToggleDarkModeButton() {
               {Object.keys(themeIcons).map((themeName) => (
                 <li key={themeName}>
                   <button
+                    title={themeName}
+                    aria-label={themeName}
                     className={
                       "rounded-full p-3 [-webkit-tap-highlight-color:transparent] " +
-                      (themeName === theme ? "text-sky-600" : "")
+                      (themeName.toLowerCase() === theme ? "text-sky-600" : "")
                     }
                     onClick={() => {
-                      setTheme(themeName);
+                      setTheme(themeName.toLowerCase());
                       setIsThemeMenuOpen(false);
                     }}
                   >
