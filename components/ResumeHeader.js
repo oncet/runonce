@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import profilePic from "../public/profilePic.jpg";
-// import PrintButton from "./PrintButton";
 import Strong from "./Strong";
 
 export default function Header() {
@@ -10,7 +9,7 @@ export default function Header() {
       <Image
         src={profilePic}
         alt="Me using an old MSX-like computer"
-        className="h-32 w-32 rounded-full terminal:rounded-none print:hidden"
+        className="h-32 w-32 rounded-[64px] transition-[border-radius] duration-300 terminal:rounded-none print:hidden"
         priority
       />
       <div className="max-w-screen-md print:flex print:max-w-none print:flex-row print:justify-between">

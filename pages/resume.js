@@ -78,14 +78,14 @@ export default function Home() {
             </footer>
           </blockquote>
         </div> */}
-        <div className="terminal:bg-orange-500 mt-8 bg-slate-200 py-6 text-center dark:bg-slate-800 sm:text-left">
-          <p className="terminal:text-orange-900 mx-auto max-w-screen-md px-4 text-slate-800 dark:text-slate-400">
+        <div className="mt-8 bg-slate-200 py-6 text-center terminal:bg-orange-500 dark:bg-slate-800 sm:text-left">
+          <p className="mx-auto max-w-screen-md px-4 text-slate-800 terminal:text-orange-800 dark:text-slate-400">
             Contact me at{" "}
             <a
               href="mailto:camilorivera86@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="terminal:text-black whitespace-nowrap text-lg font-semibold text-sky-600 dark:text-sky-500"
+              className="whitespace-nowrap text-lg font-semibold text-sky-600 terminal:text-yellow-400 dark:text-sky-500"
             >
               <MailIcon /> camilorivera86@gmail.com
             </a>
