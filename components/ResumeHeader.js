@@ -1,17 +1,26 @@
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 import profilePic from "../public/profilePic.jpg";
 import Strong from "./Strong";
 
 export default function Header() {
+  const { theme, setTheme, resolvedTheme } = useTheme();
+
   return (
     <div className="mx-auto flex max-w-screen-md flex-col items-center gap-8 px-4 py-10 print:block print:p-0 sm:py-16">
-      <Image
-        src={profilePic}
-        alt="Me using an old MSX-like computer"
-        className="h-32 w-32 rounded-[64px] transition-[border-radius] duration-300 terminal:rounded-none print:hidden"
-        priority
-      />
+      <button
+        onClick={() => {
+          setTheme(theme === "terminal" ? "system" : "terminal");
+        }}
+        className="h-32 w-32 overflow-hidden rounded-[64px] transition-[border-radius] duration-300 terminal:rounded-none print:hidden"
+      >
+        <Image
+          src={profilePic}
+          alt="Me using an old MSX-like computer"
+          priority
+        />
+      </button>
       <div className="max-w-screen-md print:flex print:max-w-none print:flex-row print:justify-between">
         <div className="flex break-inside-avoid flex-col gap-4 text-center print:pt-0 print:text-left">
           <div className="flex flex-col gap-3 print:mt-4">
