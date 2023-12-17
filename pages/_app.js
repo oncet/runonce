@@ -7,7 +7,11 @@ import "@/styles/globals.css";
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <ThemeProvider attribute="class" defaultTheme="dark">
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="dark"
+        themes={["light", "dark", "terminal"]}
+      >
         <div className="flex min-h-screen flex-col">
           <Header />
           <Component {...pageProps} />

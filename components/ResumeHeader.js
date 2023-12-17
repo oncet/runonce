@@ -10,7 +10,7 @@ export default function Header() {
       <Image
         src={profilePic}
         alt="Me using an old MSX-like computer"
-        className="h-32 w-32 rounded-full print:hidden"
+        className="h-32 w-32 rounded-full terminal:rounded-none print:hidden"
         priority
       />
       <div className="max-w-screen-md print:flex print:max-w-none print:flex-row print:justify-between">
