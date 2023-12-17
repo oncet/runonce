@@ -4,11 +4,11 @@ export default function Footer() {
   return (
     <footer className="break-inside-avoid px-4 py-8">
       <div className="mx-auto max-w-screen-md px-4">
-        <ul className="terminal:text-orange-700 flex flex-col justify-end gap-8 text-slate-600 dark:text-slate-400 sm:flex-row">
+        <ul className="flex flex-col justify-end gap-8 text-slate-600 terminal:text-orange-700 dark:text-slate-400 sm:flex-row">
           <li className="hidden print:block">
             <Link
               href="/"
-              className="terminal:hover:text-orange-400 transition duration-300 hover:text-slate-800 dark:hover:text-slate-300"
+              className="transition duration-300 hover:text-slate-800 terminal:hover:text-orange-400 dark:hover:text-slate-300"
             >
               runonce.io
             </Link>
@@ -18,7 +18,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/camilorivera/"
               target="_blank"
               rel="noopener noreferrer"
-              className="terminal:hover:text-orange-400 transition duration-300 hover:text-slate-800 dark:hover:text-slate-300"
+              className="transition duration-300 hover:text-slate-800 terminal:hover:text-orange-400 dark:hover:text-slate-300"
             >
               linkedin.com/in/camilorivera
             </a>
@@ -28,7 +28,7 @@ export default function Footer() {
               href="https://github.com/oncet/"
               target="_blank"
               rel="noopener noreferrer"
-              className="terminal:hover:text-orange-400 transition duration-300 hover:text-slate-800 dark:hover:text-slate-300"
+              className="transition duration-300 hover:text-slate-800 terminal:hover:text-orange-400 dark:hover:text-slate-300"
             >
               github.com/oncet
             </a>
@@ -38,7 +38,7 @@ export default function Footer() {
               href="https://stackoverflow.com/users/1140065/camilo/"
               target="_blank"
               rel="noopener noreferrer"
-              className="terminal:hover:text-orange-400 transition duration-300 hover:text-slate-800 dark:hover:text-slate-300"
+              className="transition duration-300 hover:text-slate-800 terminal:hover:text-orange-400 dark:hover:text-slate-300"
             >
               stackoverflow.com/users/1140065
             </a>
@@ -48,7 +48,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/camilorivera/"
               target="_blank"
               rel="noopener noreferrer"
-              className="terminal:hover:text-orange-400 transition duration-300 hover:text-slate-800 dark:hover:text-slate-300"
+              className="transition duration-300 hover:text-slate-800 terminal:hover:text-orange-400 dark:hover:text-slate-300"
             >
               LinkedIn
             </a>
@@ -58,7 +58,7 @@ export default function Footer() {
               href="https://github.com/oncet/"
               target="_blank"
               rel="noopener noreferrer"
-              className="terminal:hover:text-orange-400 transition duration-300 hover:text-slate-800 dark:hover:text-slate-300"
+              className="transition duration-300 hover:text-slate-800 terminal:hover:text-orange-400 dark:hover:text-slate-300"
             >
               GitHub
             </a>
@@ -68,7 +68,7 @@ export default function Footer() {
               href="https://stackoverflow.com/users/1140065/camilo/"
               target="_blank"
               rel="noopener noreferrer"
-              className="terminal:hover:text-orange-400 transition duration-300 hover:text-slate-800 dark:hover:text-slate-300"
+              className="transition duration-300 hover:text-slate-800 terminal:hover:text-orange-400 dark:hover:text-slate-300"
             >
               Stack Overflow
             </a>

@@ -78,7 +78,7 @@ export default function Home() {
             </footer>
           </blockquote>
         </div> */}
-        <div className="mt-8 bg-slate-200 py-6 text-center terminal:bg-orange-500 dark:bg-slate-800 sm:text-left">
+        <div className="mt-8 bg-slate-200 py-6 text-center terminal:bg-black dark:bg-slate-800 sm:text-left">
           <p className="mx-auto max-w-screen-md px-4 text-slate-800 terminal:text-yellow-200 dark:text-slate-400">
             Contact me at{" "}
             <a

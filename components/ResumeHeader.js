@@ -10,6 +10,7 @@ export default function Header() {
   return (
     <div className="mx-auto flex max-w-screen-md flex-col items-center gap-8 px-4 py-10 print:block print:p-0 sm:py-16">
       <button
+        aria-label="Terminal mode"
         onClick={() => {
           setTheme(theme === "terminal" ? "system" : "terminal");
         }}

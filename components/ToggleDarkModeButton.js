@@ -76,7 +76,7 @@ export default function ToggleDarkModeButton() {
           }
         >
           {isThemeMenuOpen && (
-            <ul className="absolute z-40 mt-2 flex flex-col gap-1 overflow-hidden rounded-full bg-slate-200 text-center  terminal:rounded-none terminal:bg-orange-500 terminal:text-orange-800 dark:bg-slate-800">
+            <ul className="absolute z-40 mt-2 flex flex-col gap-1 overflow-hidden rounded-full bg-slate-200 text-center terminal:rounded-none terminal:bg-black terminal:text-orange-800 dark:bg-slate-800">
               {Object.keys(themeIcons)
                 .filter((themeIcon) => themeIcon !== "Terminal")
                 .map((themeName) => (
@@ -85,7 +85,7 @@ export default function ToggleDarkModeButton() {
                       title={themeName}
                       aria-label={themeName}
                       className={
-                        "rounded-full p-3 [-webkit-tap-highlight-color:transparent] " +
+                        "rounded-full p-3 [-webkit-tap-highlight-color:transparent] terminal:hover:text-orange-500 " +
                         (themeName.toLowerCase() === theme
                           ? "text-sky-600 terminal:text-yellow-400"
                           : "")
