@@ -5,7 +5,7 @@ export default function ToggleExpandIcon({ isOpen }) {
       viewBox="0 0 24 24"
       fill="currentColor"
       className={
-        "h-6 w-6 fill-slate-600 transition duration-300 group-hover:fill-slate-400 terminal:stroke-orange-500"
+        "h-6 w-6 fill-slate-600 transition duration-300 terminal:fill-orange-500 group-hover:dark:fill-slate-400"
       }
     >
       {isOpen ? (
