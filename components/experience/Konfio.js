@@ -12,12 +12,11 @@ export default function Konfio() {
       subtitle={
         <>
           <Subtitle>jun 2021 — dec 2022</Subtitle>
-          <Subtitle>Sr. Pago - Konfio</Subtitle>
+          <Subtitle>Sr. Pago / Konfio</Subtitle>
         </>
       }
       summary={
         <TechList>
-          <TechListItem>AWS</TechListItem>
           <TechListItem>Material UI</TechListItem>
           <TechListItem>Nest.js</TechListItem>
           <TechListItem>React</TechListItem>
