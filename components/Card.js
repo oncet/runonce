@@ -21,7 +21,10 @@ export default function Card({ title, subtitle, summary, children }) {
       <div className="flex flex-col gap-4">
         <div className="">
           <button
-            className="group flex w-full cursor-pointer justify-between pb-3 pl-5 pr-3 pt-3 transition duration-300 focus-visible:rounded-t-lg dark:hover:bg-slate-800"
+            className={
+              "group flex w-full cursor-pointer justify-between pb-3 pl-5 pr-3 pt-3 transition duration-300 focus-visible:rounded-t-lg dark:hover:bg-slate-800 " +
+              (isOpen ? "dark:bg-slate-800" : "")
+            }
             onClick={onClickHandler}
             aria-label="Expand card"
           >
