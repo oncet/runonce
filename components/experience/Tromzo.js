@@ -39,7 +39,7 @@ export default function Tromzo() {
           props documentation and examples.
         </li>
         <li>
-          Created a throughout report of the performance of the app using{" "}
+          Created a throughout performance report of the app using{" "}
           <Strong>Lighthouse</Strong> and{" "}
           <Strong>webpack-bundle-analyzer</Strong>, which included set of
           suggested follow up actions to solve some of the issues (like
