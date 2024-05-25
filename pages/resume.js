@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import FadeInOnEntry from "@/components/FadeInOnEntry";
 import Footer from "@/components/Footer";
 import Header from "@/components/ResumeHeader";
 import Educar from "@/components/experience/Educar";
@@ -10,16 +11,15 @@ import Gm2dev from "@/components/experience/Gm2dev";
 import Konfio from "@/components/experience/Konfio";
 import LeanderGames from "@/components/experience/LeanderGames";
 import Persiscal from "@/components/experience/Persiscal";
+import Tromzo from "@/components/experience/Tromzo";
 import Yappa from "@/components/experience/Yappa";
 import MailIcon from "@/components/icons/MailIcon";
-import FadeInOnEntry from "@/components/FadeInOnEntry";
-import Tromzo from "@/components/experience/Tromzo";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Camilo Rivera / Software Engineer</title>
+        <title>Camilo Rivera / Web dev</title>
         <meta
           name="description"
           content="Experienced developer proficient in TypeScript, React, Node.js, and SQL."
