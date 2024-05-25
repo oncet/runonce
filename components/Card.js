@@ -14,26 +14,29 @@ export default function Card({ title, subtitle, summary, children }) {
   return (
     <div
       className={
-        "flex cursor-pointer break-inside-avoid flex-col rounded-lg border-2 bg-slate-50 p-3 transition-all duration-300 [-webkit-tap-highlight-color:transparent] terminal:rounded-none terminal:border-[2px] terminal:border-dashed	terminal:border-orange-500 terminal:bg-black dark:border-slate-800/75 dark:bg-slate-800/75 dark:hover:bg-slate-800 print:border-none print:p-0 " +
+        "flex break-inside-avoid flex-col overflow-hidden rounded-lg border-2 bg-slate-50 pb-3 transition-all duration-300 [-webkit-tap-highlight-color:transparent] terminal:rounded-none terminal:border-[2px] terminal:border-dashed	terminal:border-orange-500 terminal:bg-black dark:border-slate-800/75 dark:bg-slate-800/75 print:border-none print:p-0 " +
         (isOpen ? "border-slate-400" : "border-slate-200")
       }
-      onClick={onClickHandler}
     >
       <div className="flex flex-col gap-4">
-        <div className="pl-2 print:pl-0">
-          <div className="mb-3 flex justify-between">
+        <div className="">
+          <button
+            className="group flex w-full cursor-pointer justify-between pb-3 pl-5 pr-3 pt-3 transition duration-300 focus-visible:rounded-t-lg dark:hover:bg-slate-800"
+            onClick={onClickHandler}
+            aria-label="Expand card"
+          >
             <h2 className="text-xl font-semibold">{title}</h2>
-            <button aria-label="Expand card" className="print:hidden">
+            <div className="print:hidden">
               <ToggleExpandIcon isOpen={isOpen} />
-            </button>
-          </div>
-          {subtitle}
+            </div>
+          </button>
+          <div className="px-5">{subtitle}</div>
         </div>
-        {summary}
+        <div className="px-3">{summary}</div>
       </div>
       <div
         className={
-          "grid transition-all duration-300 ease-in-out print:block print:opacity-100 " +
+          "grid px-3 transition-all duration-300 ease-in-out print:block print:opacity-100 " +
           (isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0")
         }
       >
