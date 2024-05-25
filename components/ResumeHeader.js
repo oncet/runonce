@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 import profilePic from "../public/profilePic.jpg";
 import Strong from "./Strong";
@@ -22,9 +22,7 @@ export default function Header() {
         <div className="flex break-inside-avoid flex-col gap-4 text-center print:pt-0 print:text-left">
           <div className="flex flex-col gap-3 print:mt-4">
             <h1 className="text-4xl font-bold tracking-wide">Camilo Rivera</h1>
-            <p className="text-2xl font-thin tracking-wide">
-              Software engineer
-            </p>
+            <p className="text-2xl font-thin tracking-wide">Web developer</p>
           </div>
           <p className="text-xl text-slate-300 [text-wrap:balance] terminal:text-orange-500 dark:text-slate-400">
             <Strong>TypeScript</Strong>, <Strong>React</Strong>,{" "}
