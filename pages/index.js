@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Camilo Rivera / Software Engineer</title>
+        <title>Camilo Rivera / Homepage</title>
         <meta
           name="description"
           content="Experienced developer proficient in TypeScript, React, Node.js, and SQL."
@@ -18,7 +18,7 @@ export default function Home() {
           Runonce
         </h1>
         <p className="mb-4 text-lg [text-wrap:balance] dark:text-slate-300">
-          Hi, welcome to my homepage! My name is Camilo and I like coding.
+          Hi, welcome to my homepage! 👋 My name is Camilo and I like coding.
         </p>
         <p className="mb-20 text-lg [text-wrap:balance] dark:text-slate-300">
           Checkout my{" "}
