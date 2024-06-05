@@ -51,10 +51,6 @@ export default function Tromzo() {
           to solve the issue of rendering too many columns at once, which was
           causing performance issues.
         </li>
-        <li>
-          Started the conversation on adding hot reload to improve the developer
-          experience, which was eventually added by a team mate.
-        </li>
       </Ul>
     </Card>
   );
