@@ -21,12 +21,18 @@ export default function Projects() {
         </p>
         <dl className="flex flex-col gap-4">
           <div className="">
-            <dt className="text-lg dark:text-slate-300">Hiragana flashcards</dt>
+            <dt className="text-lg dark:text-slate-300">
+              <a href="https://hiraganaflashcards.vercel.app/">
+                Hiragana flashcards
+              </a>
+            </dt>
             <dd>A web app for people learning japanese.</dd>
           </div>
           <div className="">
             <dt className="text-lg dark:text-slate-300">
-              Random Simpsons Episode Picker
+              <a href="https://simpsons-episode-picker.vercel.app/">
+                Simpsons Episode Picker
+              </a>
             </dt>
             <dd>
               A web app for randomly selecting a Simpsons espisode from your
