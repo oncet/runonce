@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import ToggleExpandIcon from "./icons/ToggleExpandIcon";
 
 export default function Card({ title, subtitle, summary, children }) {
@@ -31,7 +30,7 @@ export default function Card({ title, subtitle, summary, children }) {
         </div>
         <div className="px-3">{summary}</div>
         <button
-          className="flex justify-center rounded-b-lg pb-4"
+          className="flex justify-end rounded-b-lg pb-3 pr-3"
           onClick={onClickHandler}
           aria-label="Expand card"
           title={`${isOpen ? "Collapse" : "Expand"} ${title} card`}
