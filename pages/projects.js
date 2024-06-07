@@ -31,7 +31,7 @@ export default function Projects() {
           <div className="">
             <dt className="text-lg dark:text-slate-300">
               <a href="https://simpsons-episode-picker.vercel.app/">
-                Simpsons Episode Picker
+                Simpsons episode picker
               </a>
             </dt>
             <dd>
