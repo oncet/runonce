@@ -27,6 +27,13 @@ export default function Home() {
             className="font-bold text-sky-600 dark:text-sky-400"
           >
             resume
+          </Link>{" "}
+          or my recent{" "}
+          <Link
+            href="projects"
+            className="font-bold text-sky-600 dark:text-sky-400"
+          >
+            projects
           </Link>
           .
         </p>
