@@ -9,7 +9,6 @@ import Elementum from "@/components/experience/Elementum";
 import EntornosEducativos from "@/components/experience/EntornosEducativos";
 import Gm2dev from "@/components/experience/Gm2dev";
 import Konfio from "@/components/experience/Konfio";
-import LeanderGames from "@/components/experience/LeanderGames";
 import Persiscal from "@/components/experience/Persiscal";
 import Tromzo from "@/components/experience/Tromzo";
 import Yappa from "@/components/experience/Yappa";
@@ -38,9 +37,6 @@ export default function Home() {
           <hr className="border-1 terminal:border-dashed terminal:border-orange-800 dark:border-slate-800 print:hidden" />
           <FadeInOnEntry>
             <Gm2dev />
-          </FadeInOnEntry>
-          <FadeInOnEntry>
-            <LeanderGames />
           </FadeInOnEntry>
           <FadeInOnEntry>
             <Educar />
