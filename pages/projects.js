@@ -26,7 +26,7 @@ export default function Projects() {
                 Hiragana flashcards
               </a>
             </dt>
-            <dd>A web app for people learning japanese.</dd>
+            <dd>A web app for learning japanese.</dd>
           </div>
           <div className="">
             <dt className="text-lg dark:text-slate-300">
@@ -36,7 +36,7 @@ export default function Projects() {
             </dt>
             <dd>
               A web app for randomly selecting a Simpsons espisode from your
-              favourite seasons.
+              favourite seasons!
             </dd>
           </div>
         </dl>
