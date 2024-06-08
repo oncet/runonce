@@ -11,7 +11,7 @@ export default function Home() {
           content="Experienced developer proficient in TypeScript, React, Node.js, and SQL."
           key="desc"
         />
-        <meta property="og:image" content="https://runonce.io/og.jpg" />
+        <meta property="og:image" content="https://runonce.dev/og.jpg" />
       </Head>
       <main className="mx-auto w-full max-w-screen-md px-4">
         <h1 className="my-4 text-6xl font-extrabold lowercase tracking-tight drop-shadow dark:drop-shadow-none">

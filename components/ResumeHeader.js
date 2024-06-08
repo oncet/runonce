@@ -29,7 +29,7 @@ export default function Header() {
             <Strong>Node.js</Strong>, <Strong>SQL</Strong>
           </p>
         </div>
-        <a href="https://runonce.io/resume" className="hidden print:block">
+        <a href="https://runonce.dev/resume" className="hidden print:block">
           <Image
             src="/qr.png"
             width="200"

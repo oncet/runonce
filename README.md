@@ -1,4 +1,4 @@
-# [runonce.io](https://www.runonce.io/)
+# [runonce.dev](https://www.runonce.dev/)
 
 My personal homepage, mostly for sharing my online resume.
 

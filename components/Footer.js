@@ -10,7 +10,7 @@ export default function Footer() {
               href="/"
               className="transition duration-300 hover:text-slate-800 terminal:hover:text-orange-400 dark:hover:text-slate-300"
             >
-              runonce.io
+              runonce.dev
             </Link>
           </li>
           <li className="hidden print:block">

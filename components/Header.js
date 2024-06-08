@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-import ToggleDarkModeButton from "./ToggleDarkModeButton";
 import PrintButton from "./PrintButton";
+import ToggleDarkModeButton from "./ToggleDarkModeButton";
 
 export default function Header() {
   return (
@@ -12,7 +12,7 @@ export default function Header() {
             href="/"
             className="text-slate-500 transition terminal:text-yellow-500 terminal:hover:text-yellow-300 dark:text-slate-400 dark:hover:text-slate-300"
           >
-            runonce.io
+            runonce.dev
           </Link>
         </div>
         <div className="flex gap-4">
