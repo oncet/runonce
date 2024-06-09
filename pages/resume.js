@@ -14,6 +14,7 @@ import Persiscal from "@/components/experience/Persiscal";
 import Tromzo from "@/components/experience/Tromzo";
 import Yappa from "@/components/experience/Yappa";
 import MailIcon from "@/components/icons/MailIcon";
+import ToggleExpandIcon from "@/components/icons/ToggleExpandIcon";
 
 export default function Home() {
   const [isShowMore, setIsShowMore] = useState(false);
@@ -40,37 +41,11 @@ export default function Home() {
           <div>
             <div className="flex justify-center">
               <button
-                className="group flex w-[145px] items-center justify-between gap-2 rounded-xl border-2 px-4 py-2 font-semibold terminal:w-[160px] terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200"
+                className="group flex w-[155px] items-center justify-between gap-2 rounded-xl border-2 px-4 py-2 font-semibold terminal:w-[160px] terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200"
                 onClick={() => setIsShowMore(!isShowMore)}
               >
                 {isShowMore ? "Show less" : "Show more"}
-                {isShowMore ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="h-4 w-4 fill-slate-600 transition group-hover:fill-slate-400"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM6.75 9.25a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="h-4 w-4 fill-slate-600 transition group-hover:fill-slate-400"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-11.25a.75.75 0 0 0-1.5 0v2.5h-2.5a.75.75 0 0 0 0 1.5h2.5v2.5a.75.75 0 0 0 1.5 0v-2.5h2.5a.75.75 0 0 0 0-1.5h-2.5v-2.5Z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                )}
+                <ToggleExpandIcon isOpen={isShowMore} />
               </button>
             </div>
             <div
