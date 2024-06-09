@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useState } from "react";
 
 import FadeInOnEntry from "@/components/FadeInOnEntry";
 import Footer from "@/components/Footer";
@@ -15,6 +16,8 @@ import Yappa from "@/components/experience/Yappa";
 import MailIcon from "@/components/icons/MailIcon";
 
 export default function Home() {
+  const [isShowMore, setIsShowMore] = useState(false);
+
   return (
     <>
       <Head>
@@ -34,19 +37,57 @@ export default function Home() {
           <Yappa />
           <Elementum />
           <Educar2018 />
-          <hr className="border-1 terminal:border-dashed terminal:border-orange-800 dark:border-slate-800 print:hidden" />
-          <FadeInOnEntry>
-            <Gm2dev />
-          </FadeInOnEntry>
-          <FadeInOnEntry>
-            <Educar />
-          </FadeInOnEntry>
-          <FadeInOnEntry>
-            <Persiscal />
-          </FadeInOnEntry>
-          <FadeInOnEntry>
-            <EntornosEducativos />
-          </FadeInOnEntry>
+          <div className="flex justify-center">
+            <button
+              className="group flex w-[145px] items-center justify-between gap-2 rounded-xl border-2 border-slate-800 px-4 py-2 font-semibold text-slate-200"
+              onClick={() => setIsShowMore(!isShowMore)}
+            >
+              {isShowMore ? "Show less" : "Show more"}
+              {isShowMore ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-4 w-4 fill-slate-600 transition group-hover:fill-slate-400"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM6.75 9.25a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-4 w-4 fill-slate-600 transition group-hover:fill-slate-400"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-11.25a.75.75 0 0 0-1.5 0v2.5h-2.5a.75.75 0 0 0 0 1.5h2.5v2.5a.75.75 0 0 0 1.5 0v-2.5h2.5a.75.75 0 0 0 0-1.5h-2.5v-2.5Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              )}
+            </button>
+          </div>
+          {isShowMore && (
+            <>
+              <FadeInOnEntry>
+                <Gm2dev />
+              </FadeInOnEntry>
+              <FadeInOnEntry>
+                <Educar />
+              </FadeInOnEntry>
+              <FadeInOnEntry>
+                <Persiscal />
+              </FadeInOnEntry>
+              <FadeInOnEntry>
+                <EntornosEducativos />
+              </FadeInOnEntry>
+            </>
+          )}
         </div>
         {/* <div className="mx-auto mt-8 max-w-screen-md px-4">
           <blockquote cite="https://addyosmani.com/blog/good-code/">
