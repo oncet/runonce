@@ -12,7 +12,7 @@ export default function Konfio() {
       subtitle={
         <>
           <Subtitle>jun 2021 — dec 2022</Subtitle>
-          <Subtitle>Sr. Pago / Konfio</Subtitle>
+          <Subtitle>Konfio</Subtitle>
         </>
       }
       summary={
