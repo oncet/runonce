@@ -40,7 +40,7 @@ export default function Home() {
           <div>
             <div className="flex justify-center">
               <button
-                className="group flex w-[145px] items-center justify-between gap-2 rounded-xl border-2 border-slate-800 px-4 py-2 font-semibold text-slate-200"
+                className="group flex w-[145px] items-center justify-between gap-2 rounded-xl border-2 px-4 py-2 font-semibold dark:border-slate-800 dark:text-slate-200"
                 onClick={() => setIsShowMore(!isShowMore)}
               >
                 {isShowMore ? "Show less" : "Show more"}
