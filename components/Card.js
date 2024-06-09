@@ -25,18 +25,18 @@ export default function Card({ title, subtitle, summary, children }) {
             }
           >
             <h2 className="text-xl font-semibold">{title}</h2>
+            <button
+              className="flex h-7 w-7 items-center justify-center rounded-full dark:bg-slate-700"
+              onClick={onClickHandler}
+              aria-label="Expand card"
+              title={`${isOpen ? "Collapse" : "Expand"} ${title} card`}
+            >
+              <ToggleExpandIcon isOpen={isOpen} />
+            </button>
           </div>
           <div className="px-5">{subtitle}</div>
         </div>
-        <div className="px-3">{summary}</div>
-        <button
-          className="flex justify-end rounded-b-lg pb-3 pr-3"
-          onClick={onClickHandler}
-          aria-label="Expand card"
-          title={`${isOpen ? "Collapse" : "Expand"} ${title} card`}
-        >
-          <ToggleExpandIcon isOpen={isOpen} />
-        </button>
+        <div className="px-3 pb-3 ">{summary}</div>
       </div>
       <div
         className={
