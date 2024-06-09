@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-import PrintButton from "./PrintButton";
 import ToggleDarkModeButton from "./ToggleDarkModeButton";
 
 export default function Header() {
@@ -17,7 +16,6 @@ export default function Header() {
         </div>
         <div className="flex gap-4">
           <ToggleDarkModeButton />
-          <PrintButton />
         </div>
       </div>
     </header>
