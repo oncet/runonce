@@ -40,7 +40,7 @@ export default function Home() {
           <div>
             <div className="flex justify-center">
               <button
-                className="group flex w-[145px] items-center justify-between gap-2 rounded-xl border-2 px-4 py-2 font-semibold dark:border-slate-800 dark:text-slate-200"
+                className="group flex w-[145px] items-center justify-between gap-2 rounded-xl border-2 px-4 py-2 font-semibold terminal:w-[160px] terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200"
                 onClick={() => setIsShowMore(!isShowMore)}
               >
                 {isShowMore ? "Show less" : "Show more"}
@@ -82,7 +82,7 @@ export default function Home() {
               }
             >
               <div className="row-[1_/_span_2] overflow-hidden">
-                <div className="mt-7 flex flex-col  gap-4">
+                <div className="mt-7 flex flex-col gap-7">
                   <FadeInOnEntry>
                     <Gm2dev />
                   </FadeInOnEntry>
