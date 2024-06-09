@@ -1,3 +1,4 @@
+import Externalicon from "@/components/icons/ExternalIcon";
 import Head from "next/head";
 
 export default function Projects() {
@@ -21,17 +22,25 @@ export default function Projects() {
         </p>
         <dl className="flex flex-col gap-4">
           <div className="">
-            <dt className="text-lg font-bold dark:text-slate-300">
-              <a href="https://hiraganaflashcards.vercel.app/">
+            <dt className=" text-lg font-bold dark:text-slate-300">
+              <a
+                href="https://hiraganaflashcards.vercel.app/"
+                className="group inline-flex items-center gap-2"
+              >
                 Hiragana flashcards
+                <Externalicon />
               </a>
             </dt>
             <dd>A web app for learning japanese.</dd>
           </div>
           <div className="">
             <dt className="text-lg font-bold dark:text-slate-300">
-              <a href="https://simpsons-episode-picker.vercel.app/">
+              <a
+                href="https://simpsons-episode-picker.vercel.app/"
+                className="group inline-flex items-center gap-2"
+              >
                 Simpsons episode picker
+                <Externalicon />
               </a>
             </dt>
             <dd>
