@@ -21,7 +21,7 @@ export default function Projects() {
         </p>
         <dl className="flex flex-col gap-4">
           <div className="">
-            <dt className="text-lg dark:text-slate-300">
+            <dt className="text-lg font-bold dark:text-slate-300">
               <a href="https://hiraganaflashcards.vercel.app/">
                 Hiragana flashcards
               </a>
@@ -29,7 +29,7 @@ export default function Projects() {
             <dd>A web app for learning japanese.</dd>
           </div>
           <div className="">
-            <dt className="text-lg dark:text-slate-300">
+            <dt className="text-lg font-bold dark:text-slate-300">
               <a href="https://simpsons-episode-picker.vercel.app/">
                 Simpsons episode picker
               </a>
