@@ -1,4 +1,9 @@
-export default function ToggleExpandIcon({ isOpen }) {
+const sizes = {
+  sm: "h-4 w-4",
+  md: "h-6 w-6",
+};
+
+export default function ToggleExpandIcon({ size = "md", isOpen }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -7,7 +12,7 @@ export default function ToggleExpandIcon({ isOpen }) {
       strokeWidth={1.5}
       stroke="currentColor"
       className={
-        "h-6 w-6 stroke-slate-400 transition duration-300 terminal:stroke-orange-500 " +
+        `stroke-slate-400 transition duration-300 terminal:stroke-orange-500 ${sizes[size]} ` +
         (isOpen ? "scale-y-[-1]" : "")
       }
     >
