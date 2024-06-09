@@ -37,57 +37,68 @@ export default function Home() {
           <Yappa />
           <Elementum />
           <Educar2018 />
-          <div className="flex justify-center">
-            <button
-              className="group flex w-[145px] items-center justify-between gap-2 rounded-xl border-2 border-slate-800 px-4 py-2 font-semibold text-slate-200"
-              onClick={() => setIsShowMore(!isShowMore)}
+          <div>
+            <div className="flex justify-center">
+              <button
+                className="group flex w-[145px] items-center justify-between gap-2 rounded-xl border-2 border-slate-800 px-4 py-2 font-semibold text-slate-200"
+                onClick={() => setIsShowMore(!isShowMore)}
+              >
+                {isShowMore ? "Show less" : "Show more"}
+                {isShowMore ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-4 w-4 fill-slate-600 transition group-hover:fill-slate-400"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM6.75 9.25a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-4 w-4 fill-slate-600 transition group-hover:fill-slate-400"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-11.25a.75.75 0 0 0-1.5 0v2.5h-2.5a.75.75 0 0 0 0 1.5h2.5v2.5a.75.75 0 0 0 1.5 0v-2.5h2.5a.75.75 0 0 0 0-1.5h-2.5v-2.5Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                )}
+              </button>
+            </div>
+            <div
+              className={
+                "grid transition-all duration-300 ease-in-out " +
+                (isShowMore
+                  ? "grid-rows-[1fr] opacity-100"
+                  : "grid-rows-[0fr] opacity-0")
+              }
             >
-              {isShowMore ? "Show less" : "Show more"}
-              {isShowMore ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="h-4 w-4 fill-slate-600 transition group-hover:fill-slate-400"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM6.75 9.25a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="h-4 w-4 fill-slate-600 transition group-hover:fill-slate-400"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-11.25a.75.75 0 0 0-1.5 0v2.5h-2.5a.75.75 0 0 0 0 1.5h2.5v2.5a.75.75 0 0 0 1.5 0v-2.5h2.5a.75.75 0 0 0 0-1.5h-2.5v-2.5Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              )}
-            </button>
+              <div className="row-[1_/_span_2] overflow-hidden">
+                <div className="mt-7 flex flex-col  gap-4">
+                  <FadeInOnEntry>
+                    <Gm2dev />
+                  </FadeInOnEntry>
+                  <FadeInOnEntry>
+                    <Educar />
+                  </FadeInOnEntry>
+                  <FadeInOnEntry>
+                    <Persiscal />
+                  </FadeInOnEntry>
+                  <FadeInOnEntry>
+                    <EntornosEducativos />
+                  </FadeInOnEntry>
+                </div>
+              </div>
+            </div>
           </div>
-          {isShowMore && (
-            <>
-              <FadeInOnEntry>
-                <Gm2dev />
-              </FadeInOnEntry>
-              <FadeInOnEntry>
-                <Educar />
-              </FadeInOnEntry>
-              <FadeInOnEntry>
-                <Persiscal />
-              </FadeInOnEntry>
-              <FadeInOnEntry>
-                <EntornosEducativos />
-              </FadeInOnEntry>
-            </>
-          )}
         </div>
         {/* <div className="mx-auto mt-8 max-w-screen-md px-4">
           <blockquote cite="https://addyosmani.com/blog/good-code/">
