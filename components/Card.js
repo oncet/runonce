@@ -13,7 +13,7 @@ export default function Card({ title, subtitle, summary, children }) {
   return (
     <div
       className={
-        "flex break-inside-avoid flex-col overflow-hidden rounded-lg border-2 bg-slate-50 transition-all duration-300 [-webkit-tap-highlight-color:transparent] terminal:rounded-none terminal:border-[2px] terminal:border-dashed	terminal:border-orange-500 terminal:bg-black dark:border-slate-800/75 dark:bg-slate-800/75 print:border-none print:p-0 " +
+        "flex break-inside-avoid flex-col overflow-hidden rounded-xl border-2 bg-slate-50 transition-all duration-300 [-webkit-tap-highlight-color:transparent] terminal:rounded-none terminal:border-[2px] terminal:border-dashed	terminal:border-orange-500 terminal:bg-black dark:border-slate-800/75 dark:bg-slate-800/75 print:border-none print:p-0 " +
         (isOpen ? "border-slate-400" : "border-slate-200")
       }
     >
@@ -26,7 +26,7 @@ export default function Card({ title, subtitle, summary, children }) {
           >
             <h2 className="text-xl font-semibold">{title}</h2>
             <button
-              className="flex h-7 w-7 scale-150 items-center justify-center rounded-full border dark:border-gray-700"
+              className="flex h-7 w-7 scale-150 items-center justify-center rounded-md  terminal:border-none dark:bg-gray-700/30"
               onClick={onClickHandler}
               aria-label="Expand card"
               title={`${isOpen ? "Collapse" : "Expand"} ${title} card`}
