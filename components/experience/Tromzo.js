@@ -41,10 +41,8 @@ export default function Tromzo() {
         <li>
           Created a throughout performance report of the app using{" "}
           <Strong>Lighthouse</Strong> and{" "}
-          <Strong>webpack-bundle-analyzer</Strong>, which included set of
-          suggested follow up actions to solve some of the issues (like
-          implementing lazy loading, combining multiple GraphQL queries into a
-          single one, and more).
+          <Strong>webpack-bundle-analyzer</Strong>, which included a set of
+          suggested follow up actions.
         </li>
         <li>
           Implemented virtualization for the React table component. This allowed
