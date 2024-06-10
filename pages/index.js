@@ -8,7 +8,7 @@ export default function Home() {
         <title>Camilo Rivera / Homepage</title>
         <meta
           name="description"
-          content="Experienced developer proficient in TypeScript, React, Node.js, and SQL."
+          content="Experienced web developer proficient in TypeScript, React, Node.js, and SQL."
           key="desc"
         />
         <meta property="og:image" content="https://runonce.dev/og.jpg" />

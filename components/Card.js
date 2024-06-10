@@ -45,7 +45,7 @@ export default function Card({ title, subtitle, summary, children }) {
         }
       >
         <div className="row-[1_/_span_2] overflow-hidden">
-          <div className="mb-5">{children}</div>
+          <div className="mb-5 mt-1">{children}</div>
         </div>
       </div>
     </div>
