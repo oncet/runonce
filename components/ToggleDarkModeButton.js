@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from "react";
 
 import ComputerIcon from "./icons/ComputerIcon";
 import MoonIcon from "./icons/MoonIcon";
-import SunIcon from "./icons/SunIcon";
 import PhoneIcon from "./icons/PhoneIcon";
+import SunIcon from "./icons/SunIcon";
 import TerminalIcon from "./icons/TerminalIcon";
 
 const themeIcons = {
@@ -76,7 +76,7 @@ export default function ToggleDarkModeButton() {
           }
         >
           {isThemeMenuOpen && (
-            <ul className="absolute z-40 mt-2 flex flex-col gap-1 overflow-hidden rounded-full bg-slate-200 text-center terminal:rounded-none terminal:bg-black terminal:text-orange-800 dark:bg-slate-800">
+            <ul className="absolute right-0 z-40 mt-2 flex flex-col gap-1 overflow-hidden rounded-xl bg-slate-200 text-center terminal:rounded-none terminal:bg-black terminal:text-orange-800 dark:bg-slate-800">
               {Object.keys(themeIcons)
                 .filter((themeIcon) => themeIcon !== "Terminal")
                 .map((themeName) => (
@@ -85,7 +85,7 @@ export default function ToggleDarkModeButton() {
                       title={themeName}
                       aria-label={themeName}
                       className={
-                        "rounded-full p-3 [-webkit-tap-highlight-color:transparent] terminal:hover:text-orange-500 " +
+                        "flex w-full items-center gap-3 rounded-full p-3 [-webkit-tap-highlight-color:transparent] terminal:hover:text-orange-500 " +
                         (themeName.toLowerCase() === theme
                           ? "text-sky-600 terminal:text-yellow-400"
                           : "")
@@ -95,7 +95,22 @@ export default function ToggleDarkModeButton() {
                         setIsThemeMenuOpen(false);
                       }}
                     >
-                      {themeIcons[themeName]}
+                      <div>{themeIcons[themeName]}</div>
+                      <div>{themeName}</div>
+                      {themeName.toLowerCase() === theme && (
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          className="h-4 w-4 text-sky-600 terminal:text-yellow-400"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      )}
                     </button>
                   </li>
                 ))}
