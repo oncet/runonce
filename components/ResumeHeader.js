@@ -16,7 +16,12 @@ export default function Header() {
         }}
         className="h-32 w-32 overflow-hidden rounded-[64px] transition-[border-radius] duration-300 terminal:rounded-none print:hidden"
       >
-        <Image src={profilePic} alt="Using an old MSX-like computer" priority />
+        <Image
+          src={profilePic}
+          className="transition-all duration-300 terminal:[filter:sepia(100%)_contrast(150%)_saturate(150%)]"
+          alt="Using an old MSX-like computer"
+          priority
+        />
       </button>
       <div className="max-w-screen-md print:flex print:max-w-none print:flex-row print:justify-between">
         <div className="flex break-inside-avoid flex-col gap-4 text-center print:pt-0 print:text-left">
