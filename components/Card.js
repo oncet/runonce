@@ -26,7 +26,7 @@ export default function Card({ title, subtitle, summary, children }) {
           >
             <h2 className="text-xl font-semibold">{title}</h2>
             <button
-              className="flex h-7 w-7 scale-150 items-center justify-center rounded-md  terminal:border-none dark:bg-gray-700/30"
+              className="flex h-7 w-7 scale-150 items-center justify-center rounded-md transition  terminal:border-none dark:bg-gray-700/30 hover:dark:bg-gray-700/80"
               onClick={onClickHandler}
               aria-label="Expand card"
               title={`${isOpen ? "Collapse" : "Expand"} ${title} card`}
