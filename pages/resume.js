@@ -22,10 +22,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Camilo Rivera / Web dev</title>
+        <title>Camilo Rivera / Web developer</title>
         <meta
           name="description"
-          content="Experienced developer proficient in TypeScript, React, Node.js, and SQL."
+          content="Experienced web developer proficient in TypeScript, React, Node.js, and SQL."
           key="desc"
         />
         <meta property="og:image" content="https://runonce.dev/og.jpg" />
@@ -41,11 +41,13 @@ export default function Home() {
           <div>
             <div className="flex justify-center">
               <button
-                className="group flex w-[155px] items-center justify-between gap-2 rounded-xl border-2 px-4 py-2 font-semibold terminal:w-[160px] terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200"
+                className="group flex w-full items-center justify-center rounded-xl border-2 px-4 py-2 font-semibold terminal:w-[160px] terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200 sm:w-[255px]"
                 onClick={() => setIsShowMore(!isShowMore)}
               >
-                {isShowMore ? "Show less" : "Show more"}
-                <ToggleExpandIcon isOpen={isShowMore} />
+                <div className="flex w-[120px] justify-between">
+                  {isShowMore ? "Show less" : "Show more"}
+                  <ToggleExpandIcon isOpen={isShowMore} />
+                </div>
               </button>
             </div>
             <div
@@ -75,7 +77,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <div className="mx-auto mt-8 max-w-screen-md px-4">
+        {/* <div className="mx-auto max-w-screen-md px-4 py-10">
           <blockquote cite="https://addyosmani.com/blog/good-code/">
             <p className="text-center text-3xl font-thin tracking-wide text-slate-300 [text-wrap:balance]">
               Good code is like a love letter to the next developer who will
@@ -89,7 +91,7 @@ export default function Home() {
             </footer>
           </blockquote>
           <blockquote cite="https://addyosmani.com/blog/good-code/">
-            <p className="text-center text-3xl font-thin tracking-wide [text-wrap:balance]">
+            <p className="text-center text-3xl font-thin tracking-wide text-slate-300 [text-wrap:balance]">
               You should name a variable using the same care with which you name
               a first-born child.
             </p>
