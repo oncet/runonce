@@ -82,7 +82,6 @@ export default function ToggleDarkModeButton() {
                 .map((themeName) => (
                   <li key={themeName}>
                     <button
-                      title={themeName}
                       aria-label={themeName}
                       className={
                         "flex w-full items-center gap-3 rounded-full p-3 [-webkit-tap-highlight-color:transparent] terminal:hover:text-orange-500 " +
