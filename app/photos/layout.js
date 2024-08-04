@@ -22,7 +22,7 @@ export default function Home({ children }) {
             Photos
           </h1>
           <p className="mb-4 text-lg [text-wrap:balance] dark:text-slate-400">
-            I also do amateur photography.
+            Amateur photography.
           </p>
         </div>
         <div className="mx-auto mb-8 mt-0 grid max-w-screen-md gap-4 px-4 md:grid-cols-2 lg:grid-cols-3">
