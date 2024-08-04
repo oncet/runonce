@@ -18,12 +18,9 @@ export default function Home({ children }) {
       </Head>
       <main>
         <div className="mx-auto max-w-screen-md px-4">
-          <h1 className="my-4 text-4xl font-extrabold lowercase tracking-tight">
-            Photos
+          <h1 className="my-4 text-4xl font-extrabold tracking-tight">
+            Amateur photography
           </h1>
-          <p className="mb-4 text-lg [text-wrap:balance] dark:text-slate-400">
-            Amateur photography.
-          </p>
         </div>
         <div className="mx-auto mb-8 mt-0 grid max-w-screen-md gap-4 px-4 md:grid-cols-2 lg:grid-cols-3">
           {photos.map(({ id, src, alt, priority }) => (
