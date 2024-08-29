@@ -45,9 +45,14 @@ export default function Tromzo() {
           suggested follow up actions.
         </li>
         <li>
-          Implemented virtualization for the React table component. This allowed
-          to solve the issue of rendering too many columns at once, which was
-          causing performance issues.
+          Implemented virtualization on the table component for both rows and
+          columns. This allowed rendering large amounts of columns at once with
+          very small performance impact.
+        </li>
+        <li>
+          Created a new dropdown component that can render up to 30 000 options
+          with very little performance impact. The old component was struggling
+          to render 10 000 options.
         </li>
       </Ul>
     </Card>
