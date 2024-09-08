@@ -30,8 +30,8 @@ export default function Header() {
             <p className="text-2xl font-thin tracking-wide">Web developer</p>
           </div>
           <p className="text-xl text-slate-300 [text-wrap:balance] terminal:text-orange-500 dark:text-slate-400">
-            <Strong>TypeScript</Strong>, <Strong>React</Strong>,{" "}
-            <Strong>Node.js</Strong>, <Strong>SQL</Strong>
+            <Strong>React</Strong>, <Strong>TypeScript</Strong>,{" "}
+            <Strong>Node.js</Strong>
           </p>
         </div>
         <a href="https://runonce.dev/resume" className="hidden print:block">
