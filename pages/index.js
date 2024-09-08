@@ -18,7 +18,7 @@ export default function Home() {
           Runonce
         </h1>
         <p className="mb-4 text-lg [text-wrap:balance] dark:text-slate-300">
-          Hi, welcome to my homepage! 👋 My name is Camilo and I like coding.
+          Hi, welcome! 👋 My name is Camilo and I like coding.
         </p>
         <ul className="mb-20 flex gap-4 text-lg [text-wrap:balance] dark:text-slate-300">
           <li>
