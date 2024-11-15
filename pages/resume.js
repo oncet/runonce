@@ -55,7 +55,7 @@ export default function Home() {
                 "grid transition-all duration-300 ease-in-out print:grid-rows-[1fr] print:opacity-100 " +
                 (isShowMore
                   ? "grid-rows-[1fr] opacity-100"
-                  : "grid-rows-[0fr] opacity-0")
+                  : "invisible grid-rows-[0fr] opacity-0")
               }
             >
               <div className="row-[1_/_span_2] overflow-hidden">
