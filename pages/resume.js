@@ -39,7 +39,7 @@ export default function Home() {
           <Elementum />
           <Educar2018 />
           <div>
-            <div className="flex justify-center">
+            <div className="flex justify-center print:hidden">
               <button
                 className="group flex w-full items-center justify-center rounded-xl border-2 px-4 py-2 font-semibold terminal:w-[160px] terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200 sm:w-[255px]"
                 onClick={() => setIsShowMore(!isShowMore)}
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
             <div
               className={
-                "grid transition-all duration-300 ease-in-out " +
+                "grid transition-all duration-300 ease-in-out print:grid-rows-[1fr] print:opacity-100 " +
                 (isShowMore
                   ? "grid-rows-[1fr] opacity-100"
                   : "grid-rows-[0fr] opacity-0")
@@ -103,7 +103,7 @@ export default function Home() {
             </footer>
           </blockquote>
         </div> */}
-        <div className="mt-8 bg-slate-200 py-6 text-center terminal:bg-black dark:bg-slate-800 sm:text-left">
+        <div className="mt-8 bg-slate-200 py-6 text-center terminal:bg-black dark:bg-slate-800 print:mt-0 sm:text-left">
           <p className="mx-auto max-w-screen-md px-4 text-slate-800 terminal:text-yellow-200 dark:text-slate-400">
             Contact me at{" "}
             <a
