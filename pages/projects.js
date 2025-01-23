@@ -1,4 +1,4 @@
-import Externalicon from "@/components/icons/ExternalIcon";
+import ExternalIcon from "@/components/icons/ExternalIcon";
 import Head from "next/head";
 
 export default function Projects() {
@@ -28,7 +28,7 @@ export default function Projects() {
                 className="group inline-flex items-center gap-2"
               >
                 Hiragana flashcards
-                <Externalicon />
+                <ExternalIcon />
               </a>
             </dt>
             <dd>A web app for learning japanese.</dd>
@@ -40,12 +40,12 @@ export default function Projects() {
                 className="group inline-flex items-center gap-2"
               >
                 Simpsons episode picker
-                <Externalicon />
+                <ExternalIcon />
               </a>
             </dt>
             <dd>
-              A web app for randomly selecting a Simpsons espisode from your
-              favourite seasons!
+              A web app for randomly selecting a Simpsons episode from your
+              favorite seasons!
             </dd>
           </div>
         </dl>
