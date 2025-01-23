@@ -25,11 +25,12 @@ export default function Tromzo() {
           <TechListItem>webpack</TechListItem>
         </TechList>
       }
+      open
     >
       <Ul>
         <li>
           Contributed to the <Strong>Playwright</Strong> test suites, writing
-          tests for new features and and adding test cases to cover regressions.
+          tests for new features and adding test cases to cover regressions.
         </li>
         <li>
           Added <Strong>Storybook</Strong> to the project. Gradually adding more

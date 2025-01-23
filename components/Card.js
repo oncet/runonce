@@ -1,8 +1,14 @@
 import { useState } from "react";
 import ToggleExpandIcon from "./icons/ToggleExpandIcon";
 
-export default function Card({ title, subtitle, summary, children }) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Card({
+  title,
+  subtitle,
+  summary,
+  children,
+  open = false,
+}) {
+  const [isOpen, setIsOpen] = useState(open);
 
   const onClickHandler = () => {
     const textSelection = window.getSelection().toString();
