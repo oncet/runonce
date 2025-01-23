@@ -45,9 +45,9 @@ export default function Tromzo() {
         </li>
         <li>
           Created a new dropdown component that renders up to 300x more options
-          than the old one with very small performance impact. Achieved by
-          leveraging <Strong>Material UI</Strong> components and keeping the DOM
-          nodes count at minimum.
+          than it&apos;s predecessor with very small performance impact.
+          Achieved by leveraging <Strong>Material UI</Strong> components and
+          keeping the DOM nodes count at minimum.
         </li>
       </Ul>
     </Card>
