@@ -36,16 +36,15 @@ export default function Projects() {
           <div className="">
             <dt className="text-lg font-bold dark:text-slate-300">
               <a
-                href="https://simpsons-episode-picker.vercel.app/"
+                href="https://www.randomepisode.tv/"
                 className="group inline-flex items-center gap-2"
               >
-                Simpsons episode picker
+                Random episode
                 <ExternalIcon />
               </a>
             </dt>
             <dd>
-              A web app for randomly selecting a Simpsons episode from your
-              favorite seasons!
+              A web app for selecting random episodes from your favorite shows.
             </dd>
           </div>
         </dl>
