@@ -1,11 +1,15 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import { useGlitch } from "react-powerglitch";
 
 import profilePic from "../public/profilePic.jpg";
 import Strong from "./Strong";
 
 export default function Header() {
   const { theme, setTheme, resolvedTheme } = useTheme();
+  const glitch = useGlitch({
+    playMode: "manual",
+  });
 
   return (
     <div className="mx-auto flex max-w-screen-md flex-col items-center gap-8 px-4 py-10 print:block print:p-0 sm:py-16">
@@ -18,9 +22,11 @@ export default function Header() {
       >
         <Image
           src={profilePic}
-          className="transition-all duration-300 terminal:[filter:sepia(100%)_contrast(150%)_saturate(150%)]"
+          className="glitch transition-all duration-300 terminal:[filter:sepia(100%)_contrast(150%)_saturate(150%)]"
           alt="Using an old MSX-like computer"
           priority
+          ref={glitch.ref}
+          onMouseOver={() => glitch.startGlitch()}
         />
       </button>
       <div className="max-w-screen-md print:flex print:max-w-none print:flex-row print:justify-between">
