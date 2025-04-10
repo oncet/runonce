@@ -49,6 +49,7 @@ export default function Tromzo() {
           Achieved by leveraging <Strong>Material UI</Strong> components and
           keeping the DOM nodes count at minimum.
         </li>
+        <li>Implemented the UI of new AI-related features.</li>
       </Ul>
     </Card>
   );
