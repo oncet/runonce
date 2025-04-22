@@ -50,6 +50,10 @@ export default function Tromzo() {
           keeping the DOM nodes count at minimum.
         </li>
         <li>Implemented the UI of new AI-related features.</li>
+        <li>
+          Identified and fixed long-standing rendering issues in the main layout
+          using React Scan.
+        </li>
       </Ul>
     </Card>
   );
