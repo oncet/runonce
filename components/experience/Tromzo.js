@@ -21,7 +21,7 @@ export default function Tromzo() {
       subtitle={
         <>
           <Subtitle>
-            {formattedStartDate} — {formattedDiff} and counting
+            {formattedStartDate} — {formattedDiff} and&nbsp;counting
           </Subtitle>
           <Subtitle>Tromzo</Subtitle>
         </>
