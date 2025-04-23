@@ -15,10 +15,6 @@ export default function Konfio() {
 
   const formattedDiff = getDiff(endDate, startDate);
 
-  console.log("diff", formattedDiff);
-
-  console.log("dates", formattedStartDate, formattedEndDate);
-
   return (
     <Card
       title="Full-stack engineer"
