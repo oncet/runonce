@@ -4,14 +4,25 @@ import Subtitle from "../Subtitle";
 import TechList from "../TechList";
 import TechListItem from "../TechListItem";
 import Ul from "../Ul";
+import formatDate from "./formatDate";
+import getDiff from "./getDiff";
 
 export default function Elementum() {
+  const startDate = new Date("2019-05-01");
+  const endDate = new Date("2020-11-01");
+
+  const formattedStartDate = formatDate(startDate);
+
+  const formattedDiff = getDiff(endDate, startDate);
+
   return (
     <Card
       title="Frontend engineer"
       subtitle={
         <>
-          <Subtitle>may 2019 — nov 2020</Subtitle>
+          <Subtitle>
+            {formattedStartDate} — {formattedDiff}
+          </Subtitle>
           <Subtitle>Elementum</Subtitle>
         </>
       }

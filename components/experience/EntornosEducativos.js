@@ -4,14 +4,25 @@ import Subtitle from "../Subtitle";
 import TechList from "../TechList";
 import TechListItem from "../TechListItem";
 import Ul from "../Ul";
+import formatDate from "./formatDate";
+import getDiff from "./getDiff";
 
 export default function EntornosEducativos() {
+  const startDate = new Date("2012-06-01");
+  const endDate = new Date("2014-08-01");
+
+  const formattedStartDate = formatDate(startDate);
+
+  const formattedDiff = getDiff(endDate, startDate);
+
   return (
     <Card
       title="Full-stack engineer"
       subtitle={
         <>
-          <Subtitle>jun 2012 — aug 2014</Subtitle>
+          <Subtitle>
+            {formattedStartDate} — {formattedDiff}
+          </Subtitle>
           <Subtitle>Entornos Educativos</Subtitle>
         </>
       }

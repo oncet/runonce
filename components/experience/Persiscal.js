@@ -4,14 +4,25 @@ import Subtitle from "../Subtitle";
 import TechList from "../TechList";
 import TechListItem from "../TechListItem";
 import Ul from "../Ul";
+import formatDate from "./formatDate";
+import getDiff from "./getDiff";
 
 export default function Persiscal() {
+  const startDate = new Date("2015-10-01");
+  const endDate = new Date("2016-12-01");
+
+  const formattedStartDate = formatDate(startDate);
+
+  const formattedDiff = getDiff(endDate, startDate);
+
   return (
     <Card
       title="Full-stack engineer"
       subtitle={
         <>
-          <Subtitle>oct 2015 — dec 2016</Subtitle>
+          <Subtitle>
+            {formattedStartDate} — {formattedDiff}
+          </Subtitle>
           <Subtitle>Persiscal Consulting</Subtitle>
         </>
       }

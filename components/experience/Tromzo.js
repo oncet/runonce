@@ -4,14 +4,25 @@ import Subtitle from "../Subtitle";
 import TechList from "../TechList";
 import TechListItem from "../TechListItem";
 import Ul from "../Ul";
+import formatDate from "./formatDate";
+import getDiff from "./getDiff";
 
 export default function Tromzo() {
+  const startDate = new Date("2023-08-01");
+  const endDate = new Date();
+
+  const formattedStartDate = formatDate(startDate);
+
+  const formattedDiff = getDiff(endDate, startDate);
+
   return (
     <Card
       title="Frontend engineer"
       subtitle={
         <>
-          <Subtitle>aug 2023 — current</Subtitle>
+          <Subtitle>
+            {formattedStartDate} — {formattedDiff} and&nbsp;counting
+          </Subtitle>
           <Subtitle>Tromzo</Subtitle>
         </>
       }
