@@ -4,14 +4,29 @@ import Subtitle from "../Subtitle";
 import TechList from "../TechList";
 import TechListItem from "../TechListItem";
 import Ul from "../Ul";
-
+import formatDate from "./formatDate";
+import getDiff from "./getDiff";
 export default function Konfio() {
+  const startDate = new Date("2021-06-01");
+  const endDate = new Date("2022-12-01");
+
+  const formattedStartDate = formatDate(startDate);
+  const formattedEndDate = formatDate(endDate);
+
+  const formattedDiff = getDiff(endDate, startDate);
+
+  console.log("diff", formattedDiff);
+
+  console.log("dates", formattedStartDate, formattedEndDate);
+
   return (
     <Card
       title="Full-stack engineer"
       subtitle={
         <>
-          <Subtitle>jun 2021 — dec 2022</Subtitle>
+          <Subtitle>
+            {formattedStartDate} — {formattedDiff}
+          </Subtitle>
           <Subtitle>Konfio</Subtitle>
         </>
       }

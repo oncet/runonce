@@ -4,14 +4,26 @@ import Subtitle from "../Subtitle";
 import TechList from "../TechList";
 import TechListItem from "../TechListItem";
 import Ul from "../Ul";
+import formatDate from "./formatDate";
+import getDiff from "./getDiff";
 
 export default function Yappa() {
+  const startDate = new Date("2020-11-01");
+  const endDate = new Date("2021-05-01");
+
+  const formattedStartDate = formatDate(startDate);
+  const formattedEndDate = formatDate(endDate);
+
+  const formattedDiff = getDiff(endDate, startDate);
+
   return (
     <Card
       title="Backend engineer"
       subtitle={
         <>
-          <Subtitle>nov 2020 — may 2021</Subtitle>
+          <Subtitle>
+            {formattedStartDate} — {formattedDiff}
+          </Subtitle>
           <Subtitle>Yappa World Inc.</Subtitle>
         </>
       }

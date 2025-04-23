@@ -3,14 +3,24 @@ import Subtitle from "../Subtitle";
 import TechList from "../TechList";
 import TechListItem from "../TechListItem";
 import Ul from "../Ul";
+import formatDate from "./formatDate";
+import getDiff from "./getDiff";
 
 export default function Educar2018() {
+  const startDate = new Date("2018-02-01");
+  const endDate = new Date("2018-07-01");
+
+  const formattedStartDate = formatDate(startDate);
+
+  const formattedDiff = getDiff(endDate, startDate);
   return (
     <Card
       title="Tech lead"
       subtitle={
         <>
-          <Subtitle>feb 2018 — jul 2018</Subtitle>
+          <Subtitle>
+            {formattedStartDate} — {formattedDiff}
+          </Subtitle>
           <Subtitle>Educ.ar</Subtitle>
         </>
       }
