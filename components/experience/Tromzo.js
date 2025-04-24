@@ -17,11 +17,16 @@ export default function Tromzo() {
 
   return (
     <Card
-      title="Frontend engineer"
+      title={
+        <>
+          Frontend engineer
+          <span className="ml-3 font-light text-slate-400">current</span>
+        </>
+      }
       subtitle={
         <>
           <Subtitle>
-            {formattedStartDate} — {formattedDiff} and&nbsp;counting
+            {formattedStartDate} — {formattedDiff}
           </Subtitle>
           <Subtitle>Tromzo</Subtitle>
         </>
