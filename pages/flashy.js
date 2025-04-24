@@ -37,7 +37,19 @@ export default function Home() {
               mode="matrix"
               values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
               result="goo"
-            />
+            >
+              <animate
+                attributeName="values"
+                type="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -2 ; 
+                        1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -1.5 ; 
+                        1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -2"
+                dur="3s"
+                repeatCount="indefinite"
+                calcMode="spline"
+                keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"
+              />
+            </feColorMatrix>
             <feComposite in="SourceGraphic" in2="goo" operator="atop" />
           </filter>
         </defs>
@@ -62,7 +74,19 @@ export default function Home() {
               mode="matrix"
               values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -2"
               result="gooeyShapeAlpha"
-            />
+            >
+              <animate
+                attributeName="values"
+                type="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -0 ; 
+                        1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -1.5 ; 
+                        1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -0"
+                dur="10s"
+                repeatCount="indefinite"
+                calcMode="spline"
+                keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"
+              />
+            </feColorMatrix>
             {/* 4. Define the border color */}
             <feFlood
               flood-color="oklch(27.9% 0.041 260.031)"
