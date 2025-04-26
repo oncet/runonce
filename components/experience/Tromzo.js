@@ -41,7 +41,6 @@ export default function Tromzo() {
           <TechListItem>webpack</TechListItem>
         </TechList>
       }
-      open
     >
       <Ul>
         <li>
@@ -69,6 +68,10 @@ export default function Tromzo() {
         <li>
           Identified and fixed long-standing rendering issues in the main layout
           using React Scan.
+        </li>
+        <li>
+          Addressed several security vulnerabilities reported by different
+          tools.
         </li>
       </Ul>
     </Card>
