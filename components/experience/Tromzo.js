@@ -37,6 +37,7 @@ export default function Tromzo() {
           <TechListItem>Material UI</TechListItem>
           <TechListItem>Playwright</TechListItem>
           <TechListItem>React</TechListItem>
+          <TechListItem>Storybook</TechListItem>
           <TechListItem>TypeScript</TechListItem>
           <TechListItem>webpack</TechListItem>
         </TechList>
