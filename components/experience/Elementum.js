@@ -28,14 +28,11 @@ export default function Elementum() {
       }
       summary={
         <TechList>
-          <TechListItem>React</TechListItem>
-          <TechListItem>styled-components</TechListItem>
-          <TechListItem>Storybook</TechListItem>
-          <TechListItem>webpack</TechListItem>
-          <TechListItem>REST API</TechListItem>
           <TechListItem>Node.js</TechListItem>
-          <TechListItem>Express</TechListItem>
-          <TechListItem>MongoDB</TechListItem>
+          <TechListItem>React</TechListItem>
+          <TechListItem>REST API</TechListItem>
+          <TechListItem>styled-components</TechListItem>
+          <TechListItem>webpack</TechListItem>
         </TechList>
       }
     >

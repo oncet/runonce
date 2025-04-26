@@ -19,7 +19,10 @@ export default function Home() {
         <h1 className="mt-10 text-9xl font-extrabold uppercase italic tracking-wider [filter:url('#goo')]">
           Runonce
         </h1>
-        <h1 className="mt-10 text-9xl font-extrabold uppercase italic tracking-wider text-slate-900 [filter:url('#gooey-border')]">
+        <h1
+          id="gooey-border-h1"
+          className="mt-10 text-9xl font-extrabold uppercase italic tracking-wider text-slate-900 [filter:url('#gooey-border')]"
+        >
           Runonce
         </h1>
       </main>
@@ -76,12 +79,13 @@ export default function Home() {
               result="gooeyShapeAlpha"
             >
               <animate
+                id="gooeyAnimation"
                 attributeName="values"
                 type="matrix"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -0 ; 
-                        1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -1.5 ; 
-                        1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -0"
-                dur="10s"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 0 ; 
+                        1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7 ; 
+                        1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 0"
+                dur="3s"
                 repeatCount="indefinite"
                 calcMode="spline"
                 keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"

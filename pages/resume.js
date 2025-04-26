@@ -61,10 +61,10 @@ export default function Home() {
                     <Gm2dev />
                   </FadeInOnEntry> */}
                   <FadeInOnEntry>
-                    <Educar />
+                    <Persiscal />
                   </FadeInOnEntry>
                   <FadeInOnEntry>
-                    <Persiscal />
+                    <Educar />
                   </FadeInOnEntry>
                   <FadeInOnEntry>
                     <EntornosEducativos />

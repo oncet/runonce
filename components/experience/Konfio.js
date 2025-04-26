@@ -17,7 +17,7 @@ export default function Konfio() {
 
   return (
     <Card
-      title="Full-stack engineer"
+      title="Frontend engineer"
       subtitle={
         <>
           <Subtitle>
@@ -29,9 +29,8 @@ export default function Konfio() {
       summary={
         <TechList>
           <TechListItem>Material UI</TechListItem>
-          <TechListItem>Nest.js</TechListItem>
+          <TechListItem>Node.js</TechListItem>
           <TechListItem>React</TechListItem>
-          <TechListItem>Storybook</TechListItem>
           <TechListItem>Tailwind CSS</TechListItem>
           <TechListItem>TypeScript</TechListItem>
         </TechList>
@@ -52,7 +51,7 @@ export default function Konfio() {
         <li>
           Collaborated on developing and maintaining reusable UI elements,
           design tokens, and accessibility guidelines for a component library
-          using <Strong>Material UI</Strong>, <Strong>TailwindCSS</Strong>, and{" "}
+          using <Strong>Material UI</Strong>, <Strong>Tailwind CSS</Strong>, and{" "}
           <Strong>Storybook</Strong>.
         </li>
         <li>
