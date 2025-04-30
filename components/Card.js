@@ -1,5 +1,5 @@
+import ToggleExpandIcon from "@/components/icons/ToggleExpandIcon";
 import { useState } from "react";
-import ToggleExpandIcon from "./icons/ToggleExpandIcon";
 
 export default function Card({
   title,
@@ -7,6 +7,7 @@ export default function Card({
   summary,
   children,
   open = false,
+  editable = true,
 }) {
   const [isOpen, setIsOpen] = useState(open);
 
@@ -24,25 +25,46 @@ export default function Card({
       }
     >
       <div className="flex flex-col gap-4">
-        <div className="">
+        <div className={!summary ? "pb-3" : ""}>
           <div
             className={
               "group flex w-full justify-between pb-3 pl-5 pr-3 pt-3 transition duration-300 focus-visible:rounded-t-lg  "
             }
           >
             <h2 className="text-xl font-semibold">{title}</h2>
-            <button
-              className="flex h-7 w-7 scale-150 items-center justify-center rounded-md bg-gray-200/30  transition terminal:rounded-none  terminal:border-orange-500 terminal:bg-transparent terminal:hover:border dark:bg-gray-700/30 hover:dark:bg-gray-700/80"
-              onClick={onClickHandler}
-              aria-label="Expand card"
-              title={`${isOpen ? "Collapse" : "Expand"} ${title} card`}
-            >
-              <ToggleExpandIcon size="sm" isOpen={isOpen} />
-            </button>
+            <div className="flex gap-6">
+              {editable && (
+                <button className="flex h-7 w-7 scale-150 items-center justify-center rounded-md  transition terminal:rounded-none   terminal:border-orange-500 terminal:bg-transparent terminal:hover:border  hover:dark:bg-gray-700/80">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-pencil-icon lucide-pencil h-4 w-4 stroke-slate-400"
+                  >
+                    <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+                    <path d="m15 5 4 4" />
+                  </svg>
+                </button>
+              )}
+              <button
+                className="flex h-7 w-7 scale-150 items-center justify-center rounded-md bg-gray-200/30 transition  terminal:rounded-none  terminal:border-orange-500 terminal:bg-transparent terminal:hover:border dark:bg-gray-700/30 hover:dark:bg-gray-700/80"
+                onClick={onClickHandler}
+                aria-label="Expand card"
+                title={`${isOpen ? "Collapse" : "Expand"} ${title} card`}
+              >
+                <ToggleExpandIcon size="sm" isOpen={isOpen} />
+              </button>
+            </div>
           </div>
           <div className="px-5">{subtitle}</div>
         </div>
-        <div className="px-3 pb-3 ">{summary}</div>
+        {summary && <div className="px-3 pb-3">{summary}</div>}
       </div>
       <div
         className={
