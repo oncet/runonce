@@ -16,19 +16,18 @@ export default function Header() {
       <button className="absolute right-4 top-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-user-pen-icon lucide-user-pen stroke-slate-400"
+          class="lucide lucide-pencil-icon lucide-pencil stroke-slate-400"
         >
-          <path d="M11.5 15H7a4 4 0 0 0-4 4v2" />
-          <path d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" />
-          <circle cx="10" cy="7" r="4" />
+          <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+          <path d="m15 5 4 4" />
         </svg>
       </button>
       <button
