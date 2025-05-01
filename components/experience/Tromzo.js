@@ -19,8 +19,8 @@ export default function Tromzo() {
     <Card
       title={
         <>
-          Frontend engineer
-          <span className="ml-3 font-light text-slate-400">current</span>
+          Frontend&nbsp;engineer{" "}
+          <span className="font-light text-slate-400">current</span>
         </>
       }
       subtitle={
