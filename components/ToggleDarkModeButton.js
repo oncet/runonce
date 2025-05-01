@@ -52,7 +52,7 @@ export default function ToggleDarkModeButton() {
   return (
     mounted && (
       <div
-        className="relative inline-block rounded-full print:hidden"
+        className="relative z-40 inline-block rounded-full print:hidden"
         ref={rootRef}
       >
         <button
