@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 
+import Button from "@/components/Button";
 import FadeInOnEntry from "@/components/FadeInOnEntry";
 import Footer from "@/components/Footer";
 import Header from "@/components/ResumeHeader";
@@ -29,6 +30,45 @@ export default function Home() {
       </Head>
       <main>
         <Header />
+        <div className="mx-auto flex  max-w-screen-md justify-between gap-4 px-4">
+          <Button className="group mb-5 flex items-center justify-center gap-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-plus-icon lucide-plus stroke-slate-400"
+            >
+              <path d="M5 12h14" />
+              <path d="M12 5v14" />
+            </svg>
+            Add experience
+          </Button>
+          <Button className="group mb-5 flex items-center justify-center px-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-settings2-icon lucide-settings-2 stroke-slate-400"
+            >
+              <path d="M20 7h-9" />
+              <path d="M14 17H5" />
+              <circle cx="17" cy="17" r="3" />
+              <circle cx="7" cy="7" r="3" />
+            </svg>
+          </Button>
+        </div>
         <div className="mx-auto flex max-w-screen-md flex-col gap-7 px-4 print:max-w-none print:gap-3 print:px-0">
           <Tromzo />
           <Konfio />
@@ -37,15 +77,15 @@ export default function Home() {
           {/* <Educar2018 /> */}
           <div>
             <div className="flex justify-center print:hidden">
-              <button
-                className="group flex w-full items-center justify-center rounded-xl border-2 px-4 py-2 font-semibold terminal:w-[160px] terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200 sm:w-[255px]"
+              <Button
                 onClick={() => setIsShowMore(!isShowMore)}
+                className="flex w-full items-center justify-center sm:w-[255px]"
               >
                 <div className="flex w-[120px] justify-between">
                   {isShowMore ? "Show less" : "Show more"}
                   <ToggleExpandIcon isOpen={isShowMore} />
                 </div>
-              </button>
+              </Button>
             </div>
             <div
               className={
