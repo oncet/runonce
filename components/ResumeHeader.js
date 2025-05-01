@@ -12,9 +12,9 @@ export default function Header() {
   });
 
   return (
-    <div className="group relative mx-auto flex max-w-screen-md flex-col items-center  gap-8 px-4 py-10 print:block print:p-0 sm:py-16">
+    <div className="relative mx-auto flex max-w-screen-md flex-col items-center  gap-8 px-4 py-10 print:block print:p-0 sm:py-16">
       <button
-        className="absolute right-4 top-4 rounded p-4 transition-opacity duration-150 hover:bg-slate-800 group-hover:opacity-100 sm:p-2 sm:opacity-0"
+        className="absolute right-4 top-4 rounded p-4 transition-opacity duration-150 hover:bg-slate-800 sm:p-2"
         title="Edit profile information"
       >
         <svg

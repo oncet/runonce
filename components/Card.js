@@ -20,7 +20,7 @@ export default function Card({
   return (
     <div
       className={
-        "group flex break-inside-avoid flex-col overflow-hidden rounded-xl border-2 bg-slate-50 transition-all duration-300 [-webkit-tap-highlight-color:transparent] terminal:rounded-none terminal:border-[2px] terminal:border-dashed	terminal:border-orange-500 terminal:bg-black dark:border-slate-800/75 dark:bg-slate-800/75 print:border-none print:p-0 " +
+        "flex break-inside-avoid flex-col overflow-hidden rounded-xl border-2 bg-slate-50 transition-all duration-300 [-webkit-tap-highlight-color:transparent] terminal:rounded-none terminal:border-[2px] terminal:border-dashed	terminal:border-orange-500 terminal:bg-black dark:border-slate-800/75 dark:bg-slate-800/75 print:border-none print:p-0 " +
         (isOpen ? "border-slate-400" : "border-slate-200")
       }
     >
@@ -34,7 +34,7 @@ export default function Card({
             <h2 className="text-xl font-semibold">{title}</h2>
             <div className="flex gap-6">
               {editable && (
-                <button className="flex h-7 w-7 scale-150 items-center justify-center rounded-md  transition transition-opacity   duration-150 group-hover:opacity-100 terminal:rounded-none  terminal:border-orange-500 terminal:bg-transparent terminal:hover:border hover:dark:bg-gray-700/80 sm:opacity-0">
+                <button className="flex h-7 w-7 scale-150 items-center justify-center rounded-md  transition duration-150 terminal:rounded-none  terminal:border-orange-500 terminal:bg-transparent terminal:hover:border hover:dark:bg-gray-700/80">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
