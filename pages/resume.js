@@ -13,7 +13,7 @@ import Persiscal from "@/components/experience/Persiscal";
 import Tromzo from "@/components/experience/Tromzo";
 import MailIcon from "@/components/icons/MailIcon";
 import ToggleExpandIcon from "@/components/icons/ToggleExpandIcon";
-
+import Link from "next/link";
 export default function Home() {
   const [isShowMore, setIsShowMore] = useState(false);
 
@@ -31,7 +31,28 @@ export default function Home() {
       <main>
         <Header />
         <div className="mx-auto flex  max-w-screen-md justify-between gap-4 px-4">
-          <Button className="group mb-5 flex items-center justify-center gap-4">
+          <Link
+            className="group mb-5 flex gap-2 rounded-xl border-2 px-4 py-2 font-semibold text-slate-300 underline decoration-transparent decoration-wavy decoration-2 underline-offset-8 transition-all duration-150 terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200 "
+            href="/add"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-plus-icon lucide-plus stroke-slate-300 transition-all duration-500 ease-in-out"
+            >
+              <path d="M5 12h14" />
+              <path d="M12 5v14" />
+            </svg>
+            Add experience
+          </Link>
+          {/* <Button className="group mb-5 flex items-center justify-center gap-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -48,7 +69,7 @@ export default function Home() {
               <path d="M12 5v14" />
             </svg>
             Add experience
-          </Button>
+          </Button> */}
           <Button className="group mb-5 flex items-center justify-center px-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
