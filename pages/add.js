@@ -1,4 +1,6 @@
 import Button from "@/components/Button";
+import Input from "@/components/Input";
+import Label from "@/components/Label";
 import Head from "next/head";
 
 export default function Home() {
@@ -17,55 +19,26 @@ export default function Home() {
         <div className="mx-auto max-w-screen-md px-4 py-2">
           <form className="flex flex-col gap-4">
             <div className="group flex flex-col gap-2">
-              <label
-                htmlFor="title"
-                className="font-light transition dark:text-slate-400 group-focus-within:dark:text-slate-300 group-hover:dark:text-slate-200"
-              >
-                Title *
-              </label>
-              <input
-                id="title"
-                placeholder="e.g. Software Engineer"
-                className="rounded-xl border-2 px-4 py-2 font-semibold terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200"
-              />
+              <Label htmlFor="title">Title *</Label>
+              <Input id="title" placeholder="e.g. Software Engineer" />
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">
               <div className="flex grow flex-col gap-2">
-                <label
-                  htmlFor="start-date"
-                  className="font-light transition dark:text-slate-400 group-focus-within:dark:text-slate-300 group-hover:dark:text-slate-200"
-                >
-                  Start date *
-                </label>
-                <input
-                  id="start-date"
-                  type="date"
-                  className="rounded-xl border-2 px-4 py-2 font-semibold terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200"
-                />
+                <Label htmlFor="start-date">Start date *</Label>
+                <Input id="start-date" type="date" />
               </div>
               <div className="flex grow flex-col gap-2">
-                <label
-                  htmlFor="end-date"
-                  className="font-light transition dark:text-slate-400 group-focus-within:dark:text-slate-300 group-hover:dark:text-slate-200"
-                >
-                  End date
-                </label>
-                <input
-                  id="end-date"
-                  type="date"
-                  className="rounded-xl border-2 px-4 py-2 font-semibold terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200"
-                />
+                <Label htmlFor="end-date">End date</Label>
+                <Input id="end-date" type="date" />
               </div>
             </div>
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-2">
-                <label className="font-light transition dark:text-slate-400 group-focus-within:dark:text-slate-300 group-hover:dark:text-slate-200">
-                  Keywords
-                </label>
+                <Label htmlFor="new-keyword">Keywords</Label>
                 <div className="flex flex-col gap-4 sm:flex-row">
-                  <input
+                  <Input
                     id="new-keyword"
-                    className="grow rounded-xl border-2 px-4 py-2 font-semibold terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200"
+                    className="grow"
                     placeholder="e.g. React, Node.js, SQL"
                   />
                   <button
@@ -157,9 +130,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-4">
               <div className="flex flex-col gap-2">
-                <label className="font-light transition dark:text-slate-400 group-focus-within:dark:text-slate-300 group-hover:dark:text-slate-200">
-                  Highlights
-                </label>
+                <Label>Highlights</Label>
                 <div className="flex flex-col gap-4 sm:flex-row">
                   <textarea
                     id="new-highlights"
