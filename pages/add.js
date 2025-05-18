@@ -1,6 +1,5 @@
 import Button from "@/components/Button";
-import Input from "@/components/Input";
-import Label from "@/components/Label";
+import InputField from "@/components/InputField";
 import Head from "next/head";
 
 export default function Home() {
@@ -18,25 +17,32 @@ export default function Home() {
       <main>
         <div className="mx-auto max-w-screen-md px-4 py-2">
           <form className="flex flex-col gap-4">
-            <div className="group flex flex-col gap-2">
-              <Label htmlFor="title">Title *</Label>
-              <Input id="title" placeholder="e.g. Software Engineer" />
-            </div>
+            <InputField>
+              <InputField.Label htmlFor="title">Title *</InputField.Label>
+              <InputField.Input
+                id="title"
+                placeholder="e.g. Software Engineer"
+              />
+            </InputField>
             <div className="flex flex-col gap-4 sm:flex-row">
-              <div className="flex grow flex-col gap-2">
-                <Label htmlFor="start-date">Start date *</Label>
-                <Input id="start-date" type="date" />
-              </div>
-              <div className="flex grow flex-col gap-2">
-                <Label htmlFor="end-date">End date</Label>
-                <Input id="end-date" type="date" />
-              </div>
+              <InputField className="grow">
+                <InputField.Label htmlFor="start-date">
+                  Start date *
+                </InputField.Label>
+                <InputField.Input id="start-date" type="date" />
+              </InputField>
+              <InputField className="grow">
+                <InputField.Label htmlFor="end-date">End date</InputField.Label>
+                <InputField.Input id="end-date" type="date" />
+              </InputField>
             </div>
             <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2">
-                <Label htmlFor="new-keyword">Keywords</Label>
+              <InputField>
+                <InputField.Label htmlFor="new-keyword">
+                  Keywords
+                </InputField.Label>
                 <div className="flex flex-col gap-4 sm:flex-row">
-                  <Input
+                  <InputField.Input
                     id="new-keyword"
                     className="grow"
                     placeholder="e.g. React, Node.js, SQL"
@@ -64,7 +70,7 @@ export default function Home() {
                     <span className="block sm:hidden"> keyword</span>
                   </button>
                 </div>
-              </div>
+              </InputField>
               <ul className="flex flex-wrap gap-4">
                 <li className="inline-flex items-center gap-2 rounded-xl border-2 px-4 py-2 font-semibold terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200">
                   <span>Keyword 1</span>
@@ -129,12 +135,13 @@ export default function Home() {
               </ul>
             </div>
             <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2">
-                <Label>Highlights</Label>
-                <div className="flex flex-col gap-4 sm:flex-row">
+              <InputField>
+                <InputField.Label>Highlights</InputField.Label>
+                <div className="flex flex-col items-start gap-4 sm:flex-row">
                   <textarea
                     id="new-highlights"
-                    className="grow rounded-xl border-2 px-4 py-2 font-normal [field-sizing:content] terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200"
+                    rows={1}
+                    className="grow resize-none rounded-xl border-2 px-4 py-2 font-normal [field-sizing:content] terminal:rounded-none terminal:border-orange-500 dark:border-slate-800 dark:text-slate-200"
                     placeholder="i.e. Whatever you find relevant about this experience"
                   />
                   <button
@@ -160,7 +167,7 @@ export default function Home() {
                     <span className="block sm:hidden"> highlight</span>
                   </button>
                 </div>
-              </div>
+              </InputField>
               <ul className="flex flex-col gap-2">
                 <li className="mb-2 flex items-start gap-2 rounded-lg border-solid bg-slate-800 px-4 py-2 text-sm text-slate-300">
                   <span>
