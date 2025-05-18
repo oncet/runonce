@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import Card from "@/components/Card";
 import InputField from "@/components/InputField";
 import Head from "next/head";
 
@@ -169,101 +170,40 @@ export default function Home() {
                 </div>
               </InputField>
               <ul className="flex flex-col gap-2">
-                <li className="mb-2 flex items-start gap-2 rounded-lg border-solid bg-slate-800 px-4 py-2 text-sm text-slate-300">
-                  <span>
-                    Contributed to the Playwright test suites, writing tests for
-                    new features and adding test cases to cover regressions.
-                    Contributed to the Playwright test suites, writing tests for
-                    new features and adding test cases to cover regressions.
-                    Contributed to the Playwright test suites, writing tests for
-                    new features and adding test cases to cover regressions.
-                    Contributed to the Playwright test suites, writing tests for
-                    new features and adding test cases to cover regressions.
-                  </span>
-                  <button
-                    type="button"
-                    className="rounded-xl border-2 px-2 py-2 font-semibold terminal:rounded-none terminal:border-orange-500 dark:border-transparent dark:text-slate-200"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-x"
+                <li className="mb-2 flex items-start gap-2">
+                  <Card className="px-5 py-3">
+                    <span>
+                      Contributed to the Playwright test suites, writing tests
+                      for new features and adding test cases to cover
+                      regressions. Contributed to the Playwright test suites,
+                      writing tests for new features and adding test cases to
+                      cover regressions. Contributed to the Playwright test
+                      suites, writing tests for new features and adding test
+                      cases to cover regressions. Contributed to the Playwright
+                      test suites, writing tests for new features and adding
+                      test cases to cover regressions.
+                    </span>
+                    <button
+                      type="button"
+                      className="rounded-xl border-2 px-2 py-2 font-semibold terminal:rounded-none terminal:border-orange-500 dark:border-transparent dark:text-slate-200"
                     >
-                      <path d="M18 6 6 18"></path>
-                      <path d="m6 6 12 12"></path>
-                    </svg>
-                  </button>
-                </li>
-                <li className="mb-2 flex items-start gap-2 rounded-lg border-solid bg-slate-800 px-4 py-2 text-sm text-slate-300">
-                  <span>
-                    Contributed to the Playwright test suites, writing tests for
-                    new features and adding test cases to cover regressions.
-                    Contributed to the Playwright test suites, writing tests for
-                    new features and adding test cases to cover regressions.
-                    Contributed to the Playwright test suites, writing tests for
-                    new features and adding test cases to cover regressions.
-                    Contributed to the Playwright test suites, writing tests for
-                    new features and adding test cases to cover regressions.
-                  </span>
-                  <button
-                    type="button"
-                    className="rounded-xl border-2 px-2 py-2 font-semibold terminal:rounded-none terminal:border-orange-500 dark:border-transparent dark:text-slate-200"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-x"
-                    >
-                      <path d="M18 6 6 18"></path>
-                      <path d="m6 6 12 12"></path>
-                    </svg>
-                  </button>
-                </li>
-                <li className="mb-2 flex items-start gap-2 rounded-lg border-solid bg-slate-800 px-4 py-2 text-sm text-slate-300">
-                  <span>
-                    Contributed to the Playwright test suites, writing tests for
-                    new features and adding test cases to cover regressions.
-                    Contributed to the Playwright test suites, writing tests for
-                    new features and adding test cases to cover regressions.
-                    Contributed to the Playwright test suites, writing tests for
-                    new features and adding test cases to cover regressions.
-                    Contributed to the Playwright test suites, writing tests for
-                    new features and adding test cases to cover regressions.
-                  </span>
-                  <button
-                    type="button"
-                    className="rounded-xl border-2 px-2 py-2 font-semibold terminal:rounded-none terminal:border-orange-500 dark:border-transparent dark:text-slate-200"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-x"
-                    >
-                      <path d="M18 6 6 18"></path>
-                      <path d="m6 6 12 12"></path>
-                    </svg>
-                  </button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-x"
+                      >
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                      </svg>
+                    </button>
+                  </Card>
                 </li>
               </ul>
             </div>
